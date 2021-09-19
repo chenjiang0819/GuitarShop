@@ -1,0 +1,181 @@
+
+
+/*Declaration */ 
+/*The child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that 
+are the direct children of elements matched by the first.Elements matched by the second selector must be the immediate children of the elements matched by the first selector. 
+This is stricter than the descendant combinator, which matches all elements matched by the
+second selector for which there exists an ancestor element matched by the first selector, regardless of the number of "hops" up the DOM.*/
+/*Reference*/
+/*MDN web docs*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator#:~:text=The%20child%20combinator%20(%20%3E%20)%20is,
+elements%20matched%20by%20the%20first.&text=Elements%20matched%20by%20the%20second%20selector%20must%20be%20the%20immediate,matched%20by%20the%20first%20selector.*/
+
+/*css for the pictures of the quick-access */
+.home-nav-box{
+    position: relative;
+}
+/*use child Selector(>) to select the all(*) elements that are the last child of home-nav-box class, 
+which are the pictures link to the other pages in quick-access
+also use "absolute" to put the linked picture to bottom of previous picture in this class*/
+.home-nav-box > *:last-child{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*the positions of the first two pictures*/
+.home-wall{
+    position: relative;
+}
+.home-wall img{
+    max-width: 100%;
+}
+
+
+/*we do not display the slogan at the desktop mode*/
+.home-wall .shop-widget {
+    display: none;
+}
+
+
+/*for quick-access
+if the screen size is smaller than we design, the quick-access will be wrapped*/
+.home-menu{
+    padding: 77px;
+    flex-wrap:wrap-reverse;
+}
+
+.home-menu img{
+    max-width: 100%;
+    margin-bottom:77px;
+}
+
+/*choose the properties of the summary of my story*/
+.center-insert-box{
+    height: 299px;
+    position: relative;
+}
+
+.center-insert-box>.center-insert{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.insert-left{
+    justify-content: initial;
+    margin-right: 46px;
+    font-size: 82px;
+}
+/* the font of the title of the summary of my story*/
+.insert-left .insert-left-up{
+    height: 299px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/* the font of the text of the summary of my story*/
+.insert-left .s-text{
+    font-size: 27px;
+    max-width: 455px;
+    color: #262626;
+}
+/* the margin of the button for read more*/
+.insert-left .more-btn{
+    margin-top: 15px;
+}
+/* the size of the button for read more*/
+.insert-left .btn-h{
+    width: 200px;
+}
+/* set position and keep size of the picture in the summary of my story*/
+.insert-right img{
+    position: relative;
+    width: 339px;
+    height: 422px;
+}
+
+/*setup the padding and the background of the New arrived*/
+.home-arrivals{
+    padding-top: 473px;
+    background: url("img/home-arrivals-bg.png") no-repeat;
+    padding-bottom: 200px;
+}
+/*setup the font of the block title, "New arrive"*/
+.home-arrivals .block-title{
+    font-size: 73px;
+    font-weight: bold;
+    color: #757575;
+    margin-bottom: 52px;
+}
+/*setup the width of the "Shop All" button*/
+.home-arrivals .arrival-show-all>div{
+    width: 327px;
+}
+
+@media screen and (max-width: 640px) {
+    /*the positions of the first two pictures and home menu for mobile*/
+    .home-wall {
+        flex-direction: column;
+    }
+    /* use "absolute" to fix the position of the slogan for mobile*/
+    .home-wall .shop-widget {
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+        left: 50px;
+        position: absolute;
+    }
+    /*set the padding of the quick-access*/
+    .home-menu {
+        padding: 50px;
+    }
+    /*choose the properties of the summary of my story for mobile*/
+    .center-insert-box{
+        position: relative;
+        height: 613px;
+    }
+
+    .center-insert-box>.center-insert{
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    /*use "column-reverse" put the picture on the top of the text*/
+    .center-insert-box .center-insert >div{
+        flex-direction: column-reverse;
+    }
+    /* set the font of the title of the summary of my story*/
+    .insert-left{
+        font-size: 40px;
+    }
+    /* ser the to height adjust the position of the title, text, and the button*/
+    .insert-left .insert-left-up{
+        height: 144px;
+    }
+    /* set the font of the text of the summary of my story for mobile*/
+    .insert-left .s-text{
+        font-size: 18px;
+    }
+    /*set position and keep size of the picture in the summary of my story for mobile*/
+    .insert-right img{
+        width: 339px;
+        height: 422px;
+        margin-top: 45px;
+    }
+    /* the position of the button for read more*/
+    .insert-left .more-btn{
+        display: flex;
+        justify-content: center;
+    }    
+    /*setup the font of the block title, "New arrive", for mobile*/
+    .home-arrivals .block-title{
+        font-size: 40px;
+    }
+    /*remove the background picture and just use the blank background for mobile */
+    .home-arrivals{
+        padding: 275px 47px;
+        background: none;
+    }
+}
+

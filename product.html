@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Product</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @import url("layout.css");
+        @import url("product.css");
+    </style>
+
+    <!--import the common javascript-->
+    <script type="application/javascript" src="java.js">
+    </script>
+    
+<body>
+<body>
+    <header class="flex-c f-stretch">
+        <!--import the logo picture-->
+        <div class="header-logo f-auto flex-c">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <!--Nav things-->
+        <nav id="floatNav">
+            <!--the close X for mobile-->
+            <div>
+                <div class="nav-x flex-c" onclick="switchNav()">
+                    <img src="img/x.png" alt="x">
+                </div>
+            </div>
+            <!--the texts of Nav menu and its url-->
+            <div class="header-menu flex-c">
+                <div class="flex-c"><a href="home.html">HOME</a></div>
+                <div class="flex-c active-page"><a href="shop.html">SHOP</a></div>
+                <div class="flex-c"><a href="story.html">OUR STORY</a></div>
+                <div class="flex-c"><a href="#">MEMBERS</a></div> <!--no connection,but we still keep this option-->
+                <div class="flex-c"><a href="contact.html">CONTACT</a></div>
+            </div>
+            <!--import the login picture-->
+            <div class="login box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/login.png" alt="login">
+                </div>
+                <a href="#">Log in</a> <!--no connection,but we still keep this option-->
+            </div>
+        </nav>
+        <!--for cart on the every page-->
+        <div class="cart flex f-stretch m-b-o">
+            <!--import the cart picture-->
+            <div class="box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/cart.png" alt="cart">
+                </div>
+                <a class="m-f-g" href="cart.html">View Cart</a>
+            </div>
+            <!--import the hamburger Nav picture for mobile-->
+            <div class="nav-trigger">
+                <div class="box-img flex-c" onclick="switchNav()">
+                    <img src="img/trigger.png" alt="trigger">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<main>
+    <!-- the "return to shop" options for desktop -->
+    <div class="board desktop">
+        <a href="home.html" class="m-f-b-28">HOME</a>
+        <a href="shop.html" class="m-f-b-28"> / SHOP / 2016 Martin OOO 18GE ......</a>
+    </div>
+    <!-- the "return to shop" options for mobile -->
+    <div class="board mobile">
+        <a href="Shop.html" class="m-f-b-28">&lt; Back to SHOP</a>
+    </div>
+    <!-- the images of the product-->
+    <div class="product-main flex-c f-stretch mfl-cd">
+        <div class="p-left">
+            <div class="p-left-up">
+                <img class="mw-100" src="img/product-1.png" alt="img">
+            </div>
+            <div class="p-left-down flex-c f-equal f-wrap">
+                <div class="img-box"><img src="img/pd1.png" alt="img"></div>
+                <div class="img-box"><img src="img/pd2.png" alt="img"></div>
+                <div class="img-box"><img src="img/pd3.png" alt="img"></div>
+                <div class="img-box"><img src="img/pd4.png" alt="img"></div>
+                <div class="img-box"><img src="img/pd5.png" alt="img"></div>
+                <div class="img-box"><img src="img/pd6.png" alt="img"></div>
+                <div class="img-box"><img src="img/pd7.png" alt="img"></div>
+                <div class="img-box"><img src="img/pd8.png" alt="img"></div>
+            </div>
+        </div>
+        <!-- the commercial information of the product-->
+        <div class="p-right f-auto flex-l-cd">
+            <div class="flex-l-cd p-right-content f-auto">
+                <div class="product-text">
+                    <div class="f-o-40-b mf-o-28">2016 Martin OOO18GE "Golden Era" #</div>
+                    <br/>
+                    <br/>
+                    <div class="m-f-b-28">Martin</div>
+                    <br/>
+                    <br/>
+                    <div class="m-f-b-28">$5,799.00</div>
+                    <br/>
+                    <br/>
+                    <!-- the quantity information box -->
+                    <div class="m-f-b-28">Quantity</div>
+                    <br/>
+                    <div style="width: 100px;"><input class="inp-k" type="number"></div>
+                </div>
+                <!-- the "add to cart" button-->
+                <div class="f-auto flex-c add-cart-btn">
+                    <a href="cart.html" class="btn-h">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- the description of the product-->
+    <div class="product-rest flex mfl-cd">
+        <div class="product-description f-b-20 mf-b-18">
+            One from Martin's "Golden Era" series. A range of guitars that celebrate the design, quality, and timbers
+            that all came together in the Pre World War 2 years. Style 18, So It has a Honduran Mahogany Back, Sides and
+            Neck, "Adirondack" Spruce Top (AKA Red or Eastern Spruce) without much runout, as in the grain lines aren't
+            too far apart from each other. Ebony Fretboard and Bridge, Rosewood Headstock overlay. Waverley vintage
+            style Tuners, Fossilised Walrus Ivory Nut, Bridge Saddle and Pins complete the picture. a treat to play and
+            it sounds like a classic old Blues record.
+        </div>
+        <!-- the return and shipping information-->
+        <div class="others f-auto">
+            <div class="rt f-b-40 mf-b-18">Return & Refund Policy</div>
+            <div class="rt f-b-40 mf-b-18">Shipping Info</div>
+        </div>
+    </div>
+</main>
+
+<!--the footer of the page (every page is same)-->
+    <footer class="flex-c-cd m-b-g f-stretch">
+        <!--the text of the footer-->
+        <div class="foot-menu flex f-equal f-auto">
+            <div class="foot-box">
+                <div>TWANG</div>
+                <div><a href="home.html">HOME</a></div>
+                <div><a href="shop.html">SHOP</a></div>
+                <div><a href="story.html">OUR STORY</a></div>
+                <div><a href="#">MEMBERS</a></div>
+                <div><a href="contact.html">CONTACT</a></div>
+            </div>
+            <div class="foot-box">
+                <div>EXPERIENCE</div>
+                <div>FAQ</div>
+                <div>Shipping & Return</div>
+                <div>Store Podivcy</div>
+                <div>Payment Methods</div>
+            </div>
+            <div class="foot-box">
+                <div>FOLLOW US</div>
+                <div>Facebook</div>
+                <div>Twitter</div>
+                <div>Instagram</div>
+                <div>Pinterest</div>
+            </div>
+            <!--the subscribe section-->
+            <div class="foot-box">
+                <div>JOIN OUR NEWSLETTER</div>
+                <!--use <input type="text"> to read the text and use "placeholder=" to hold the hint-->
+                <div><input class="inp-h" type="text" placeholder="Enter your email here*"/></div>
+                <div class="btn-f">Subscribe Now</div>
+            </div>
+        </div>
+        <!--my copyrights declaration-->
+        <div class="foot-copy m-b-o">
+            <div class="copy-s">&copy; 2021 by CHEN JIANG Proudly created</div>
+        </div>
+    </footer>
+</body>
+
+</html>

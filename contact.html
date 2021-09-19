@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @import url("layout.css");
+        @import url("contact.css");
+    </style>
+
+    <!--import the common javascript-->
+    <script type="application/javascript" src="java.js">
+    </script>
+    
+</head>
+<body>
+    <header class="flex-c f-stretch">
+        <!--import the logo picture-->
+        <div class="header-logo f-auto flex-c">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <!--Nav things-->
+        <nav id="floatNav">
+            <!--the close X for mobile-->
+            <div>
+                <div class="nav-x flex-c" onclick="switchNav()">
+                    <img src="img/x.png" alt="x">
+                </div>
+            </div>
+            <!--the texts of Nav menu and its url-->
+            <div class="header-menu flex-c">
+                <div class="flex-c"><a href="home.html">HOME</a></div>
+                <div class="flex-c"><a href="shop.html">SHOP</a></div>
+                <div class="flex-c"><a href="story.html">OUR STORY</a></div>
+                <div class="flex-c"><a href="#">MEMBERS</a></div> <!--no connection,but we still keep this option-->
+                <div class="flex-c active-page"><a href="contact.html">CONTACT</a></div>
+            </div>
+            <!--import the login picture-->
+            <div class="login box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/login.png" alt="login">
+                </div>
+                <a href="#">Log in</a> <!--no connection,but we still keep this option-->
+            </div>
+        </nav>
+        <!--for cart on the every page-->
+        <div class="cart flex f-stretch m-b-o">
+            <!--import the cart picture-->
+            <div class="box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/cart.png" alt="cart">
+                </div>
+                <a class="m-f-g" href="cart.html">View Cart</a>
+            </div>
+            <!--import the hamburger Nav picture for mobile-->
+            <div class="nav-trigger">
+                <div class="box-img flex-c" onclick="switchNav()">
+                    <img src="img/trigger.png" alt="trigger">
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <!--the title and the top picture of the page-->
+    <div class="x-wall">
+        <div class="x-wall-title"><div class="title-box">
+            <div><div>CONTACT</div></div>
+        </div></div>
+        <div class="x-wall-img"><img src="img/p-wall-2.png" alt="img"></div>
+    </div>
+
+    <div class="ct-main flex-c-cd f-stretch">
+        <div class="flex-c ct-head">
+            <!--the tile picture and the illustration of the story for desktop(big size)-->
+            <div class="ct-desktop ct-d-img">
+                <img src="img/ct-d.png" alt="img">
+            </div>
+            <!--the tile picture and the illustration of the story for mobile(small size)-->
+            <div class="ct-mobile ct-d-img">
+                <img src="img/ct-m.png" alt="img">
+            </div>
+            <!--the contact information-->
+            <div class="ct-detail">
+                <div>VISIT OUR STORE</div>
+                <div>&nbsp;</div>
+                <div>Address: 208 Gilbert Street,</div>
+                <div>Adelaide, 5000</div>
+                <div>&nbsp;</div>
+                <div>Tel: 08 8231 9255</div>
+                <div>&nbsp;</div>
+                <div>Fax: 08 82319666</div>
+                <div>&nbsp;</div>
+                <div>Email: twangcentral5@bigpond.com</div>
+            </div>
+        </div>
+        <!--the contact form-->
+        <div class="ct-form">
+            <form action="#" class="ct-d-form">
+                <div class="ct-d-in-line">
+                    <input class="inp-b" type="text" placeholder="Name">
+                    <div class="inp-divider"></div>
+                    <input class="inp-b" type="text" placeholder="Email">
+                </div>
+                <input class="inp-b" type="text" placeholder="Subject">
+                <textarea class="inp-b" placeholder="Message"></textarea>
+            </form>
+            <!--the submit button for the contact information-->
+            <div class="flex-c sub-btn">
+                <div><a class="btn-f" href="home.html">Submit</a></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--the footer of the page (every page is same)-->
+    <footer class="flex-c-cd m-b-g f-stretch">
+        <!--the text of the footer-->
+        <div class="foot-menu flex f-equal f-auto">
+            <div class="foot-box">
+                <div>TWANG</div>
+                <div><a href="home.html">HOME</a></div>
+                <div><a href="shop.html">SHOP</a></div>
+                <div><a href="story.html">OUR STORY</a></div>
+                <div><a href="#">MEMBERS</a></div>
+                <div><a href="contact.html">CONTACT</a></div>
+            </div>
+            <div class="foot-box">
+                <div>EXPERIENCE</div>
+                <div>FAQ</div>
+                <div>Shipping & Return</div>
+                <div>Store Podivcy</div>
+                <div>Payment Methods</div>
+            </div>
+            <div class="foot-box">
+                <div>FOLLOW US</div>
+                <div>Facebook</div>
+                <div>Twitter</div>
+                <div>Instagram</div>
+                <div>Pinterest</div>
+            </div>
+            <!--the subscribe section-->
+            <div class="foot-box">
+                <div>JOIN OUR NEWSLETTER</div>
+                <!--use <input type="text"> to read the text and use "placeholder=" to hold the hint-->
+                <div><input class="inp-h" type="text" placeholder="Enter your email here*"/></div>
+                <div class="btn-f">Subscribe Now</div>
+            </div>
+        </div>
+        <!--my copyrights declaration-->
+        <div class="foot-copy m-b-o">
+            <div class="copy-s">&copy; 2021 by CHEN JIANG Proudly created</div>
+        </div>
+    </footer>
+</body>
+
+</html>

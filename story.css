@@ -1,0 +1,39 @@
+/*set padding of the all story content for desktop*/
+.story-content{
+    padding: 0 140px;
+}
+
+/*the size of the text of the story*/
+.story-text{
+    padding-top: 40px;
+    width: 753px;
+    margin-right: 49px;
+    font-size: 16px;
+}
+/* we do not display the mobile title picture in the desktop version*/
+.story-title-mobile{
+    display: none;
+}
+/* the position of the illustration of the story*/
+.story-detail .story-img{
+    position: relative;
+    top: -150px;
+}
+/* the setting of the mobile version */
+@media screen and (max-width: 640px) {
+    /*we do not display the desktop title picture and illustration in the mobile version */
+    .story-title{
+        display: none;
+    }
+    .story-desktop{
+        display: none;
+    }
+    /* set padding of the all story content for mobile*/
+    .story-content{
+         padding: 30px;
+     }
+      /* the setting of the story title picture for mobile*/
+    .story-title-mobile{
+        display: flex;
+    }
+}

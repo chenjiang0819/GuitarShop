@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Story</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @import url("layout.css");
+        @import url("story.css");
+    </style>
+
+        <!--import the common javascript-->
+    <script type="application/javascript" src="java.js">
+    </script>
+    
+</head>
+<body>
+    <header class="flex-c f-stretch">
+        <!--import the logo picture-->
+        <div class="header-logo f-auto flex-c">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <!--Nav things-->
+        <nav id="floatNav">
+            <!--the close X for mobile-->
+            <div>
+                <div class="nav-x flex-c" onclick="switchNav()">
+                    <img src="img/x.png" alt="x">
+                </div>
+            </div>
+            <!--the texts of Nav menu and its url-->
+            <div class="header-menu flex-c">
+                <div class="flex-c"><a href="home.html">HOME</a></div>
+                <div class="flex-c"><a href="shop.html">SHOP</a></div>
+                <div class="flex-c active-page"><a href="story.html">OUR STORY</a></div>
+                <div class="flex-c"><a href="#">MEMBERS</a></div> <!--no connection,but we still keep this option-->
+                <div class="flex-c"><a href="contact.html">CONTACT</a></div>
+            </div>
+            <!--import the login picture-->
+            <div class="login box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/login.png" alt="login">
+                </div>
+                <a href="#">Log in</a> <!--no connection,but we still keep this option-->
+            </div>
+        </nav>
+        <!--for cart on the every page-->
+        <div class="cart flex f-stretch m-b-o">
+            <!--import the cart picture-->
+            <div class="box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/cart.png" alt="cart">
+                </div>
+                <a class="m-f-g" href="cart.html">View Cart</a>
+            </div>
+            <!--import the hamburger Nav picture for mobile-->
+            <div class="nav-trigger">
+                <div class="box-img flex-c" onclick="switchNav()">
+                    <img src="img/trigger.png" alt="trigger">
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <!--the title and the top picture of the page-->
+    <div class="x-wall">
+        <div class="x-wall-title"><div class="title-box">
+            <div><div>OUR<br>STORY</div></div>
+        </div></div>
+        <div class="x-wall-img"><img src="img/p-wall-1.png" alt="img"></div>
+    </div>
+    <!--the content of the story-->
+    <div class="story-content flex-c-cd f-stretch">
+        <!--the tile picture of the story for desktop-->
+        <div class="story-title story-desktop flex">
+            <img src="img/story-title.png" alt="img">
+        </div>
+        <!--the tile picture and the illustration of the story for mobile-->
+        <div class="story-title-mobile flex-c">
+            <img src="img/story-mobile.png" alt="img">
+        </div>
+        <!--the text of the story-->
+        <div class="story-detail flex">
+            <div class="story-text">
+                <div>
+                    Glad you found us! Twangcentral is a two-storey bricks and mortar store, formerly a 19th century
+                    saddlery, in the South West Corner of the Adelaide CBD, in South Australia. Now in our twelfth year, we
+                    specialise in Vintage Guitars, Basses, Amps and Ukuleles.
+                    <br/>
+                    <br/>
+                    Check us out, you'll see we have a large room we call "The Vault", housing the best range of vintage
+                    guitars and amps for sale in the country. We always have on hand some entry and intermediate level
+                    acoustic and electric guitars, through to Martin, Gibson and Fender Custom Shop instruments. We also
+                    provide professional repair and set up work in-store, and, as players, we know how it feels when you get
+                    a guitar playing just right.
+                    <br/>
+                    <br/>
+                    Our friends say Twangcentral has a cool vintage vibe with an old school feel and charm, and we're keen
+                    to keep that going. If you're in our part of the world you're most welcome to call in and check it out,
+                    we're open weekdays 9-5 and Saturdays 9-4 ACST. Tea and coffee available, just ask!
+                    <br/>
+                    <br/>
+                    Twangcentral is operated by Terry O’Riley an "old salt", Ian "Dr Zot" Stehlik, and Lachie Reid, all of
+                    whom have an extensive background as "pickers and purveyors",
+                    <br/>
+                    Call in, email, phone or carrier pigeon! See you there!
+                    <br/>
+                    <br/>
+                    Remember, We Sell Keepers !!
+                    <br/>
+                    <br/>
+                    <div class="m-f-o">Terry and the Team</div>
+                    <div class="m-f-o">Twangcentral Guitars</div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+            <!--the picture of the story for desktop-->
+            <div class="story-img story-desktop">
+                <img src="img/story-img.png" alt="img">
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--the footer of the page (every page is same)-->
+    <footer class="flex-c-cd m-b-g f-stretch">
+        <!--the text of the footer-->
+        <div class="foot-menu flex f-equal f-auto">
+            <div class="foot-box">
+                <div>TWANG</div>
+                <div><a href="home.html">HOME</a></div>
+                <div><a href="shop.html">SHOP</a></div>
+                <div><a href="story.html">OUR STORY</a></div>
+                <div><a href="#">MEMBERS</a></div>
+                <div><a href="contact.html">CONTACT</a></div>
+            </div>
+            <div class="foot-box">
+                <div>EXPERIENCE</div>
+                <div>FAQ</div>
+                <div>Shipping & Return</div>
+                <div>Store Podivcy</div>
+                <div>Payment Methods</div>
+            </div>
+            <div class="foot-box">
+                <div>FOLLOW US</div>
+                <div>Facebook</div>
+                <div>Twitter</div>
+                <div>Instagram</div>
+                <div>Pinterest</div>
+            </div>
+            <!--the subscribe section-->
+            <div class="foot-box">
+                <div>JOIN OUR NEWSLETTER</div>
+                <!--use <input type="text"> to read the text and use "placeholder=" to hold the hint-->
+                <div><input class="inp-h" type="text" placeholder="Enter your email here*"/></div>
+                <div class="btn-f">Subscribe Now</div>
+            </div>
+        </div>
+        <!--my copyrights declaration-->
+        <div class="foot-copy m-b-o">
+            <div class="copy-s">&copy; 2021 by CHEN JIANG Proudly created</div>
+        </div>
+    </footer>
+</body>
+
+</html>

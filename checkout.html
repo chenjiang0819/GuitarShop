@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @import url("layout.css");
+        @import url("checkout.css");
+    </style>
+    <script type="application/javascript" src="java.js">
+    </script>  
+</head>
+
+<body>
+    <header class="flex-c f-stretch">
+        <!--import the logo picture-->
+        <div class="header-logo f-auto flex-c">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <!--Nav things-->
+        <nav id="floatNav">
+            <!--the close X for mobile-->
+            <div>
+                <div class="nav-x flex-c" onclick="switchNav()">
+                    <img src="img/x.png" alt="x">
+                </div>
+            </div>
+            <!--the texts of Nav menu and its url-->
+            <div class="header-menu flex-c">
+                <div class="flex-c"><a href="home.html">HOME</a></div>
+                <div class="flex-c active-page"><a href="shop.html">SHOP</a></div>
+                <div class="flex-c"><a href="story.html">OUR STORY</a></div>
+                <div class="flex-c"><a href="#">MEMBERS</a></div> <!--no connection,but we still keep this option-->
+                <div class="flex-c"><a href="contact.html">CONTACT</a></div>
+            </div>
+            <!--import the login picture-->
+            <div class="login box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/login.png" alt="login">
+                </div>
+                <a href="#">Log in</a> <!--no connection,but we still keep this option-->
+            </div>
+        </nav>
+        <!--for cart on the every page-->
+        <div class="cart flex f-stretch m-b-o">
+            <!--import the cart picture-->
+            <div class="box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/cart.png" alt="cart">
+                </div>
+                <a class="m-f-g" href="cart.html">View Cart</a>
+            </div>
+            <!--import the hamburger Nav picture for mobile-->
+            <div class="nav-trigger">
+                <div class="box-img flex-c" onclick="switchNav()">
+                    <img src="img/trigger.png" alt="trigger">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex pr">
+        <div class="check-main flex-tl-cd mg-r-120-0">
+            <!--paypal payment-->
+            <div class="flex-c"><img class="ck-head-img" src="img/checkout-head.png" alt="img"></div>
+            <div class="or-divider pr flex-c">
+                <div class="pr flex-c f-b-40-28">Or</div>
+            </div>
+            <!--the title of billing information form-->
+            <div class="ck-box flex-tl-cd mg-h-25-12">
+                <div class="f-b-40-28">1. Billing information</div>
+                <br/>
+                <!--the personal information form-->
+                <div class="f-b-28-18">Email address</div>
+                <br/>
+                <div><input class="ck-input" type="text"></div>
+                <div class="ck-check flex f-b-28-18">
+                    <div class="flex-c"><input type="checkbox"/></div>
+                    Subscribe to our newsletter and we'll keep you up to date on our products and services.
+                </div>
+            </div>
+            <div class="xfl-cd f-equal mg-h-25-12">
+                <div class="mg-r-68-0 f-auto">
+                    <div class="f-b-28-18">First name</div>
+                    <br/>
+                    <div><input class="ck-input" type="text"></div>
+                </div>
+                <div class="f-auto">
+                    <div class="f-b-28-18">Last name</div>
+                    <br/>
+                    <div><input class="ck-input" type="text"></div>
+                </div>
+                <br/>
+            </div>
+            <!--the company information form-->
+            <div class="mg-h-25-12">
+                <div class="f-b-28-18">Company name</div>
+                <br/>
+                <div><input class="ck-input" type="text"></div>
+            </div>
+            <!--the contry selection form-->
+            <div class="mg-h-25-12">
+                <div class="f-b-28-18">Country</div>
+                <br/>
+                <select class="ck-select f-auto m-b-g f-g-28-18">
+                    <option value="1">Australia</option>
+                    <option value="2">American</option>
+                    <option value="3">Britain</option>
+                </select>
+            </div>
+            <!--the form of the postal address-->
+            <div class="mg-h-25-12">
+                <div class="f-b-28-18">Address</div>
+                <br/>
+                <div><input class="ck-input" type="text"></div>
+                <br/>
+                <div><input class="ck-input" type="text"></div>
+            </div>
+            <div class="xfl-cd f-equal mg-h-25-12">
+                <div class="mg-r-68-0 f-auto">
+                    <div class="f-b-28-18">Postcode</div>
+                    <br/>
+                    <div><input class="ck-input" type="text"></div>
+                </div>
+                <div class="mg-r-68-0 f-auto">
+                    <div class="f-b-28-18">Suburb/City</div>
+                    <br/>
+                    <div><input class="ck-input" type="text"></div>
+                </div>
+                <div class="f-auto">
+                    <div class="f-b-28-18">State/Territoy</div>
+                    <br/>
+                    <div><input class="ck-input" type="text"></div>
+                </div>
+                <br/>
+            </div>
+            <!--the form of the contact number-->
+            <div class="mg-h-25-12">
+                <div class="f-b-28-18">Phone number</div>
+                <br/>
+                <div><input class="ck-input" type="text"></div>
+            </div>
+            <br/>
+            <br/>
+            <!--the title of shipping information form-->
+            <div class="f-b-40-28 mg-h-25-12">2. Shipping information</div>
+            <!--the select billing address for shipping information form-->
+            <div class="flex f-b-28-18 ck-ckbox">
+                <div class="flex-c"><input type="radio" name="shipping"></div>
+                Billing address
+            </div>
+            <div class="flex f-b-28-18 ck-ckbox">
+                <div class="flex-c"><input type="radio" name="shipping"></div>
+                Different address
+            </div>
+            <!--the delivery instructions (150px height)-->
+            <div class="f-b-28-18 mg-h-25-12">Delivery instructions <span class="f-g-28-18">optional</span></div>
+            <div class="flex mg-h-25-12">
+                <textarea class="ck-textarea f-auto" style="height: 150px"></textarea>
+            </div>
+            <!--Char calculator for textarea(dummy)-->
+            <div class="f-g-28-18 mg-h-25-12">300 Characters Left</div>
+            <!--check box for Signature requirement and leaving parcel-->
+            <div class="ck-check flex f-b-28-18">
+                <div class="flex-c"><input type="checkbox"/></div>
+                Signature not required on delivery
+            </div>
+            <div class="ck-check flex f-g-28-18">
+                <div class="flex-c"><input style="visibility: hidden" type="checkbox"/></div>
+                Authority to leave parcel if receiver not avalilable
+            </div>
+            <br/>
+            <br/>
+            <!--the title of payment details form-->
+            <div class="f-b-40-28 mg-h-25-12">3. Payment details</div>
+            <!--the credit card information-->
+            <div class="mg-h-25-12">
+                <div class="f-b-28-18">Card number</div>
+                <br/>
+                <div><input class="ck-input" type="text"></div>
+            </div>
+            <div class="mg-h-25-12">
+                <div class="f-b-28-18">Name on Card</div>
+                <br/>
+                <div><input class="ck-input" type="text"></div>
+            </div>
+            <div class="xfl-cd f-equal mg-h-25-12">
+                <div class="mg-r-68-0 f-auto">
+                    <div class="f-b-28-18">Expiry Date</div>
+                    <br/>
+                    <div><input class="ck-input" type="text" placeholder="MM/YY"></div>
+                </div>
+                <div class="f-auto">
+                    <div class="f-b-28-18">Security Code</div>
+                    <br/>
+                    <div><input class="ck-input" type="text" placeholder="CVN"></div>
+                </div>
+                <br/>
+            </div>
+            <!-- selection for saving payment details -->
+            <div class="f-b-28-18 mg-h-25-12">Would you like us to securely save your payment details for next visit?</div>
+            <div class="flex f-b-28-18 ck-ckbox">
+                <div class="flex-c"><input type="radio" name="bankdetails"></div>
+                Yes
+            </div>
+            <div class="flex f-b-28-18 ck-ckbox">
+                <div class="flex-c"><input type="radio" name="bankdetails"></div>
+                No
+            </div>
+            <!-- logo of the financial facilities -->
+            <div class="flex f-wrap other-pays">
+                <img src="img/c0.png">
+                <img src="img/c1.png">
+                <img src="img/c2.png">
+                <img src="img/c3.png">
+                <img src="img/c4.png">
+                <img src="img/c5.png">
+            </div>
+        </div>
+        <!-- the products information-->
+        <div id="basket" class="check-basket desktop flex-tl-cd">
+            <div>
+                <a href="product.html">
+                    <div class="flex mg-bt-75-45">
+                        <div class="flex-c mg-r-35-20">
+                            <img src="img/ck-b1.png">
+                        </div>
+                        <div class="f-auto xfl-cd">
+                            <div>
+                                <div class="f-o-28-18 ck-mw-300-150">2016 Martin OOO18GE "Golden Era"</div>
+                                <div class="f-g-28-18">Martin &nbsp;&nbsp;&nbsp;×1</div>
+                            </div>
+                            <div class="f-b-28-18 flex-c f-auto">$5,799.00</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="flex mg-bt-75-45">
+                        <div class="flex-c mg-r-35-20">
+                            <img src="img/ck-b2.png">
+                        </div>
+                        <div class="f-auto xfl-cd">
+                            <div>
+                                <div class="f-o-28-18 ck-mw-300-150">c. 1986 Guild Advanced Pilot Bass"</div>
+                                <div class="f-g-28-18">Twang Guitars&nbsp;&nbsp;&nbsp;×1</div>
+                            </div>
+                            <div class="f-b-28-18 flex-c f-auto">$3,000.00</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- the subtotal information-->
+            <div class="total f-b-28-18 btm-line top-line mg-t-45-35">
+                <div class="flex-c f-equal mg-h-25-12">
+                    <div>Subtotal:</div>
+                    <div class="price-divider"></div>
+                    <div>$8,799.00</div>
+                </div>
+                <div class="flex-c f-equal mg-h-25-12">
+                    <div>GST inc:</div>
+                    <div class="price-divider"></div>
+                    <div>$879.90</div>
+                </div>
+                <div class="flex-c f-equal mg-h-25-12">
+                    <div>Order total:</div>
+                    <div class="price-divider"></div>
+                    <div>$8,799.00</div>
+                </div>
+            </div>
+            <div class="f-b-28-18 mg-t-45-35">
+                <div class="flex-c f-equal mg-h-25-12">
+                    <div>Grand total:</div>
+                    <div class="price-divider"></div>
+                    <div>
+                        <small class="f-g-15-10">AUD</small>
+                        $8,799.00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--the submit button for the payment-->    
+    <div class="flex-c pay-btn">
+        <div><a class="btn-f" href="home.html">Check Out</a></div>
+    </div>
+    <!--the switch button for the summary-->  
+    <div class="cart-basket mobile flex-c">
+        <img src="img/basket.png" onclick="switchClass('basket', 'show')">
+    </div>
+
+
+    <!--the footer of the page (every page is same)-->
+    <footer class="flex-c-cd m-b-g f-stretch">
+        <!--the text of the footer-->
+        <div class="foot-menu flex f-equal f-auto">
+            <div class="foot-box">
+                <div>TWANG</div>
+                <div><a href="home.html">HOME</a></div>
+                <div><a href="shop.html">SHOP</a></div>
+                <div><a href="story.html">OUR STORY</a></div>
+                <div><a href="#">MEMBERS</a></div>
+                <div><a href="contact.html">CONTACT</a></div>
+            </div>
+            <div class="foot-box">
+                <div>EXPERIENCE</div>
+                <div>FAQ</div>
+                <div>Shipping & Return</div>
+                <div>Store Podivcy</div>
+                <div>Payment Methods</div>
+            </div>
+            <div class="foot-box">
+                <div>FOLLOW US</div>
+                <div>Facebook</div>
+                <div>Twitter</div>
+                <div>Instagram</div>
+                <div>Pinterest</div>
+            </div>
+            <!--the subscribe section-->
+            <div class="foot-box">
+                <div>JOIN OUR NEWSLETTER</div>
+                <!--use <input type="text"> to read the text and use "placeholder=" to hold the hint-->
+                <div><input class="inp-h" type="text" placeholder="Enter your email here*"/></div>
+                <div class="btn-f">Subscribe Now</div>
+            </div>
+        </div>
+        <!--my copyrights declaration-->
+        <div class="foot-copy m-b-o">
+            <div class="copy-s">&copy; 2021 by CHEN JIANG Proudly created</div>
+        </div>
+    </footer>
+</body>
+
+</html>

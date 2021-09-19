@@ -1,0 +1,66 @@
+main{
+    padding: 70px 307px;
+}
+
+/*set the position of the return menu*/
+.board{
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+/*set the position of the product information*/
+.product-main .p-right .p-right-content{
+    max-width: 536px;
+    padding: 0 50px;
+}
+
+/*set the position of the product description*/
+.product-description{
+    margin-top: 30px;
+    width: 360px;
+}
+/*set the position of the return and shipping information*/
+.others{
+    padding: 0 50px;
+}
+.others .rt{
+    padding: 29px 0;
+    position: relative;
+}
+.others .rt:first-child{
+    border-bottom: 1px solid gainsboro;
+}
+/*add '+'for expand table*/
+.others .rt:after{
+    position: absolute;
+    right: 0;
+    content: '+';
+    color: gainsboro;
+}
+
+/* the setting for mobile version*/
+@media screen and (max-width: 640px) {
+    main{
+        padding: 30px 55px;
+    }
+     /*set the layout of the product information for mobile version*/
+    .product-main{
+        flex-direction: column;
+    }
+
+    .product-main .p-right .p-right-content{
+        padding: 0;
+    }
+    .product-description{
+        margin-top: 30px;
+        max-width: 100%;
+    }
+    /*set the position of the add to cart button for mobile version*/
+    .add-cart-btn{
+        margin: 60px 0;
+    }
+    /*set the position of the return and shipping information for mobile version*/
+    .others{
+        padding: 0;
+    }
+}

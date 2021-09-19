@@ -1,0 +1,72 @@
+/* layout of desktop*/
+main{
+    padding-top: 120px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+/*the margin between product list and checkout information*/
+main>div:nth-child(2){
+    margin-right: 150px;
+}
+/*the setting of the product list*/
+.cart-x{
+    position: relative;
+}
+
+.cart-item .cart-item-text{
+    width: 230px;
+}
+
+.cart-price{
+    margin-right: 145px;
+}
+
+.cart-close{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+}
+/*the position of the continue shopping*/
+.contin{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    left:250px;
+    width:300px;
+}
+
+/* the setting for mobile*/
+@media screen and (max-width: 640px) {
+    main{
+        padding: 35px;
+    }
+    /*delete the margin that set for desktop*/
+    main>div:nth-child(2){
+        margin-right: 0;
+    }
+    /*set the size of the pictures in the product list for mobile*/
+    .d-img{
+        height: 120px;
+        width: 120px;
+    }
+    /*set the other properties for the product list*/
+    .cart-item .cart-item-text{
+        width: 140px;
+    }
+
+    .cart-price{
+        margin-right: initial;
+    }
+
+    .cart-close{
+        top: 30px;
+        bottom: initial;
+    }
+    /*the position of the continue shopping for mobile version*/
+    .contin{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: initial;
+    }
+}

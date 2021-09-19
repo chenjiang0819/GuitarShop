@@ -1,0 +1,774 @@
+/*This layout is designed for all the web pages*/
+/********************************************/
+/* we do not want any margin for all webpages*/
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+/* in order to let navigtaion menu to cover the pictures we do not want any space on the top*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 0px;
+}
+
+/*the size of the navigtaion menu*/
+header {
+    height: 90px;
+}
+
+
+/*the height of the footer*/
+footer {
+    height: 400px;
+}
+
+/*the settings for mobile version*/
+@media screen and (max-width: 640px) {
+/*set the height of the footer for mobile version*/
+    footer {
+        height: 1800px;
+    }
+}
+
+a {
+/* remove the underline of the linked text */    
+    text-decoration: none;
+/* set the basic colour for the linked text */    
+    color: white;
+}
+b {
+/* remove the underline of the linked text */    
+    text-decoration: none;
+/* set the basic colour for the linked text */    
+    color: black;
+}
+/********************************************/
+/*in order to use the different flex boxes in the different part of html,
+we set the differnet properties for the flex boxes */
+.flex {
+    display: flex;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-jcc{
+    justify-content: center;
+}
+.f-aic{
+    align-items: center;
+}
+
+.flex-c-cd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-l-cd {
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    flex-direction: column;
+}
+
+.flex-tl-cd {
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-direction: column;
+}
+
+.f-auto {
+    flex: auto;
+}
+
+}
+.f-equal {
+    justify-content: space-between;
+}
+
+.f-dist {
+    justify-content: space-around;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+/*no specific flex*/
+.f-none {
+    flex: none;
+}
+
+.xfl-cd{
+    display: flex;
+}
+
+.xfl-cdr{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 640px) {
+    .mfl-cd{
+        flex-direction: column;
+    }
+    .xfl-cd{
+        flex-direction: column;
+    }
+    .xfl-cdr{
+        flex-direction: column-reverse;
+    }
+}
+/*stretch to align*/
+.f-stretch {
+    align-items: stretch;
+}
+
+/*set the background colours for the differnet parts*/
+.m-b-o {
+    background: #EB9F2C;
+}
+
+.m-b-g{
+    background: #262626;
+}
+
+.m-b-g-w {
+    background: #262626;
+}
+
+/*set the font sizes and colours for differnet texts in the website*/
+.m-f-o {
+    color: #EB9F2C;
+}
+
+.m-f-g {
+    font-size: 18px;
+    color: #262626;
+}
+
+.m-f-y {
+    color: #A09E9E;
+}
+
+.m-f-w {
+    color: white;
+}
+
+.m-f-w-28 {
+    color: white;
+    font-size: 28px;
+}
+
+.m-f-w-18 {
+    color: white;
+    font-size: 18px;
+}
+
+.m-f-b-28 {
+    color: black;
+    font-size: 18px;
+}
+
+.f-b-20{
+    color: black;
+    font-size: 16px;
+}
+.f-b-40{
+    color: black;
+    font-size: 28px;
+}
+.f-o-40-b, .f-o-40-b-28, .f-b-40-28{
+    color: #EB9F2C;
+    font-size: 28px;
+}
+
+.f-o-40-b, .f-o-40-b-28 {
+    font-weight: bold;
+}
+
+.f-b-55, .f-b-w-55-40{
+    color: black;
+    font-size: 40px;
+}
+/*set colour and font size for total title of the filter*/
+.f-w-55, .f-w-b-55-40{
+    color: white;
+    font-size: 55px;
+}
+
+.f-g-15-10{
+    color: #EB9F2C;
+    font-size: 15px;
+}
+
+.f-o-28-18, .f-b-28-18, .f-g-28-18, .f-w-b-28-18, .f-g-b-28-18{
+    color: #EB9F2C;
+    font-size: 18px;
+}
+.f-b-28-18, .f-b-40-28{
+    color: black;
+}
+.f-g-28-18, .f-g-b-28-18{
+    color: #949494;
+}
+
+.f-w-28-18, .f-w-b-28-18, .f-g-15-10{
+    color: #949494;
+}
+
+@media screen and (max-width: 640px) {
+    /*set the background colours for the differnet parts in the mobile version*/
+    .m-b-g-w {
+        background: white;
+    }
+    /*set the font sizes and colours for differnet texts in the mobile version*/
+    .f-w-b-55-40, .f-g-b-28-18{
+        color: black;
+    }
+    .mf-o-28{
+        color: #EB9F2C;
+        font-size: 20px;
+    }
+    .mf-b-28{
+        color: black;
+        font-size: 28px;
+    }
+    .mf-b-18{
+        color: black;
+        font-size: 18px;
+    }
+    .f-g-15-10{
+        font-size: 10px;
+    }
+    .f-o-28-18, .f-g-28-18, .f-b-28-18, .f-g-b-28-18{
+        font-size: 18px;
+    }
+    .f-o-40-b-28, .f-b-40-28{
+        font-size: 28px;
+    }
+    .f-b-w-55-40{
+        font-size: 40px;
+    }
+}
+/*set the margins for differnet parts in the website*/
+.mg-bt-35{
+    margin-bottom: 35px;
+}
+/*the margin of the filter on desktop*/
+.mg-r-68-0{
+    margin-right: 68px;
+}
+.mg-h-25-12{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.mg-r-35, .mg-r-35-20{
+    margin-right: 35px;
+}
+
+.mg-r-20, .mg-r-20-0{
+    margin-right: 20px;
+}
+
+.mg-t-45-35{
+    margin-top: 45px;
+}
+
+.pd-bt-35{
+    padding-bottom: 35px;
+}
+
+.pd-h-35{
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+.mg-bt-75-45{
+    margin-top: 75px;
+}
+
+.mg-r-120-0{
+    margin-right: 120px;
+}
+
+@media screen and (max-width: 640px) {
+    /*set the margins for differnet parts in the the mobile version*/
+    .mg-bt-75-45{
+        margin-top: 45px;
+    }
+    .mg-t-45-35{
+        margin-top: 35px;
+    }
+    .mg-r-35-20{
+        margin-right: 20px;
+    }
+    /*set right margin for mobile*/
+    .mg-r-68-0, .mg-r-20-0{
+        margin-right: 0;
+    }
+    .mg-h-25-12{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .mg-r-120-0{
+        margin-right: 0;
+    }
+}
+
+/*draw the lines for different parts in the website*/
+.btm-line{
+    border-bottom: 1px solid gainsboro;
+}
+.top-line{
+    border-top: 1px solid gainsboro;
+}
+/* set the current name in the navigation at current page to orange colour */
+.active-page a {
+    color: #EB9F2C;
+}
+/*control the max width in the product page*/
+.mw-100{
+    max-width: 100%;
+}
+
+/* use filter cover the page*/
+.pr{
+    position: relative;
+}
+
+/*we do not display mobile parts in the desktop version*/
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    /*we do not display parts for desktop  in the mobile version*/
+    .desktop{
+        display: none;
+    }
+    /*we display parts for mobile in the mobile version*/
+    .mobile{
+        display: flex;
+    }
+}
+
+/****************************************************************/
+/* set the properties buttons */
+/*set the property of the orange buttons*/
+.btn-f {
+    display: flex;
+    background: #EB9F2C;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    cursor: pointer;
+}
+/*set property of the hover of the orange buttons*/
+.btn-f:hover {
+    background: transparent;
+    color: #EB9F2C;
+    border: solid 4px #EB9F2C;
+    box-sizing: border-box;
+}
+/*set the property of the transparent buttons*/
+.btn-h {
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    border: solid 3px #EB9F2C;
+    box-sizing: border-box;
+    color: #EB9F2C;
+    font-size: 18px;
+    cursor: pointer;
+}
+/*set property of the hover of the transparent buttons*/
+.btn-h:hover {
+    background: #EB9F2C;
+    color: white;
+}
+
+/*set proterties of the  input text */
+.inp-h {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px white;
+    font-size: 16px;
+    width: 100%;
+    color: white;
+    padding: 5px 0;
+}
+
+.inp-b {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #EB9F2C;
+    font-size: 16px;
+    width: 100%;
+    color: #262626;
+    padding: 5px 0;
+}
+
+.inp-k {
+    background-color: transparent;
+    border: solid 2px gainsboro;
+    font-size: 28px;
+    width: 100%;
+    color: #262626;
+    padding: 5px 0;
+}
+
+@media screen and (max-width: 640px) {
+    /*set the proterties of the  input text for mobile version*/
+    .inp-h {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .btn-f {
+        font-size: 18px;
+    }
+
+    .btn-h {
+        font-size: 18px;
+    }
+}
+
+/* the layout of the products display in shop, search, and "home"*/
+.car-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* the display of the porducts and its descriptions in "shop", "search" and "home"*/
+.x-car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 38px;
+    max-width: 100%;
+}
+
+/*use "after" to add content after ".new" to lab new arrivals*/
+.x-car.new:after {
+    content: "New Arrival";
+    color: white;
+    background-color: #EB9F2C;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+}
+/* the porperties of the image and text of the products displaied in shop, search, and "home"*/
+.x-car .car-img {
+    max-width: 100%;
+}
+
+.x-car .car-img img {
+    max-width: 100%;
+}
+
+.x-car .title {
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.x-car .title > a {
+    color: #EB9F2C ;
+    width: 10px;
+    flex: auto;
+    text-align: center;
+}
+
+.x-car .price > a {
+    color: black ;
+}
+
+@media screen and (max-width: 640px) {
+    /* the display of the porducts and its descriptions in "shop", "search" and "home" for mobile*/
+    .x-car {
+        font-size: 18px;
+    }
+}
+
+/*set the properties for title of story, shop, contact, and search*/
+.x-wall {
+    display: flex;
+}
+
+.x-wall .x-wall-title {
+    flex: auto;
+    background-color: #EB9F2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x-wall .x-wall-title .title-box {
+    border: white 3px solid;
+    width: 258px;
+    height: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 46px;
+}
+
+.x-wall .x-wall-title .title-box div {
+    color: white !important;
+}
+
+.x-wall .x-wall-img {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 640px) {
+    /*set the properties for title of story, shop, contact, and search for mobile version*/
+    .x-wall {
+        flex-direction: column-reverse;
+    }
+
+    .x-wall .x-wall-img img {
+        max-width: 100%;
+    }
+
+    .x-wall .x-wall-title {
+        height: 160px;
+    }
+
+    .x-wall .x-wall-title .title-box {
+        font-size: 40px;
+        width: 202px;
+        height: 126px;
+    }
+}
+
+/********************************************/
+/* header */
+/*set the properties of the header and its background*/
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;/* put the navigation bar at top*/
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9)
+}
+
+header .header-logo {
+    padding-left: 50px;
+}
+
+/* set the properties of the Navigation parts*/
+header > nav {
+    color: white;
+    font-size: 18px;
+    flex: 99 1 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* we do not dislpay X at laptop*/
+header > nav .nav-x {
+    display: none;
+}
+
+header > nav .header-menu > div {
+    margin: 10px 20px;
+}
+
+header .box {
+    padding: 0 27px;
+    flex: none;
+}
+
+/*set the margins of the pictures in the he*/
+header .box .box-img {
+    margin-right: 10px;
+}
+
+header .nav-trigger {
+    display: none;
+}
+
+/* set header for mobile */
+@media screen and (max-width: 640px) {
+    /* no gap on the top */    
+    header {
+        top: 0;
+        position: relative;
+    }
+    header .header-logo {
+    padding-left: -50px;
+    }
+    /* we do not display navigation first */
+    header > nav {
+        display: none;
+    }
+    /* display mobile navigation */
+    header > nav.nav-active {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse; /* put login on the top*/
+        background-color: rgba(0, 0, 0, 0.8);
+        overflow-y: auto;
+    }
+    /*display the X for closing the navigation*/
+    header > nav .nav-x {
+        position: absolute;
+        display: flex;
+        top: 30px;
+        right: 50px;
+        color: #EB9F2C;
+    }
+
+     /* set the bottom line and text of the header-menu for mobile*/
+    header > nav .header-menu {
+        flex-direction: column;
+        margin: 30px;
+        align-items: stretch;
+    }
+    
+    header > nav .header-menu > div {
+        border-bottom: solid white 1px;
+        height: 90px;
+        font-size: 18px;
+    }
+    /* we do not have any bottom line for the last option*/
+    header > nav .header-menu > div:last-child {
+        border-bottom: none;
+    }
+    /* set  the position of log in */
+    header > nav .login {
+        margin-top: 70px;
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    header .login.box .box-img {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    /*set text and picture in the cart for mobile*/
+    header .cart .box {
+        flex-direction: column;
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    header .cart.box .box-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    /* set margin for hamburger menu*/
+    header .nav-trigger {
+        display: flex;
+        margin: 20px;
+    }
+}
+
+/* set the properties of the footer */
+footer {
+    justify-content: space-between ;
+}
+
+/* setting location of all foot menu*/
+.foot-menu {
+    padding: 60px 120px;
+}
+/*setting the titles of the columns in footer */
+.foot-menu .foot-box div:first-child {
+    color: #EB9F2C;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*setting text of the options in footer */
+.foot-menu .foot-box div {
+    font-size: 16px;
+    color: #A09E9E;
+    margin-bottom: 16px;
+    margin-left: 50px;
+    
+}
+/* this is for linked options */
+.foot-menu .foot-box div a {
+    color: #A09E9E;
+}
+
+/* the size of the cory right box*/
+footer .foot-copy {
+    flex: none;
+    height: 80px;
+    width: 100%;
+}
+
+/* the font and location of the cory right*/
+footer .foot-copy .copy-s {
+    padding: 20px 100px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 640px) {
+    /* set properties of the footer for mobile */
+    .foot-menu {
+        flex-direction: column;
+        padding: 60px 76px;
+    }
+
+    .foot-menu .foot-box div {
+        font-size: 16px;
+        margin-bottom: 41px;
+        text-align: center;
+    }
+
+    .foot-menu .foot-box div:last-child {
+        margin-bottom: 93px;
+    }
+
+    .foot-menu .foot-box {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    /* set properties of the copyrights for mobile */
+    footer .foot-copy {
+        flex: none;
+        height: 59px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .foot-copy .copy-s {
+        font-size: 16px;
+        padding: initial;
+    }
+}
+
+/********************************************/

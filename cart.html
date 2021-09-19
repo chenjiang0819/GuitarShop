@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @import url("layout.css");
+        @import url("cart.css");
+    </style>
+    <!--import the common javascript-->
+    <script type="application/javascript" src="java.js">
+    </script>
+</head>
+
+<body>
+    <header class="flex-c f-stretch">
+        <!--import the logo picture-->
+        <div class="header-logo f-auto flex-c">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <!--Nav things-->
+        <nav id="floatNav">
+            <!--the close X for mobile-->
+            <div>
+                <div class="nav-x flex-c" onclick="switchNav()">
+                    <img src="img/x.png" alt="x">
+                </div>
+            </div>
+            <!--the texts of Nav menu and its url-->
+            <div class="header-menu flex-c">
+                <div class="flex-c"><a href="home.html">HOME</a></div>
+                <div class="flex-c active-page"><a href="shop.html">SHOP</a></div>
+                <div class="flex-c"><a href="story.html">OUR STORY</a></div>
+                <div class="flex-c"><a href="#">MEMBERS</a></div> <!--no connection,but we still keep this option-->
+                <div class="flex-c"><a href="contact.html">CONTACT</a></div>
+            </div>
+            <!--import the login picture-->
+            <div class="login box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/login.png" alt="login">
+                </div>
+                <a href="#">Log in</a> <!--no connection,but we still keep this option-->
+            </div>
+        </nav>
+        <!--for cart on the every page-->
+        <div class="cart flex f-stretch m-b-o">
+            <!--import the cart picture-->
+            <div class="box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/cart.png" alt="cart">
+                </div>
+                <a class="m-f-g" href="cart.html">View Cart</a>
+            </div>
+            <!--import the hamburger Nav picture for mobile-->
+            <div class="nav-trigger">
+                <div class="box-img flex-c" onclick="switchNav()">
+                    <img src="img/trigger.png" alt="trigger">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="xfl-cd">
+        <!--set check out button for mobile-->
+        <div class="mobile mg-bt-35">
+            <a href="checkout.html" style="width: 100%">
+                <div class="btn-h">
+                    <img src="img/lock.png" alt="img" class="mg-r-20">
+                    <span>Checkout</span>
+                </div>
+            </a>
+        </div>
+
+        <div>
+            <!--set the title of the purchures list-->
+            <div class="f-o-40-b-28 pd-bt-35 btm-line">MY CART</div>
+            <!--the information of product one -->
+            <div class="pd-h-35 btm-line xfl-cd cart-x">
+                <div class="cart-item flex">
+                    <div class="flex-c mg-r-35-20">
+                        <img class="d-img" src="img/cart-1.png" alt="img">
+                    </div>
+                    <div class="cart-item-text">
+                        <div class="f-o-28-18">2016 Martin OOO18GE "Golden Era"</div>
+                        <div class="f-g-28-18">Martin</div>
+                        <div class="f-b-28-18">$5,799.00</div>
+                    </div>
+                </div>
+                <div class="flex-c cart-price mg-t-45-35">
+                    <!--the quantity information-->
+                    <div style="width: 50px;" class="mg-r-35">
+                        <input class="inp-k" type="number" value="1">
+                    </div>
+                    <div>$5,799.00</div>
+                </div>
+                <div class="cart-close flex-c">
+                    <img src="img/close-grey.png" alt="img">
+                </div>
+            </div>
+            <!--the product two information-->
+            <div class="pd-h-35 btm-line xfl-cd cart-x">
+                <div class="cart-item flex">
+                    <div class="flex-c mg-r-35-20">
+                        <img class="d-img" src="img/cart-2.png" alt="img">
+                    </div>
+                    <div class="cart-item-text">
+                        <div class="f-o-28-18">c. 1986 Guild Advanced Pilot Bass</div>
+                        <div class="f-g-28-18">Twangcentral Guitars</div>
+                        <div class="f-b-28-18">$3,000.00</div>
+                    </div>
+                </div>
+                <div class="flex-c cart-price mg-t-45-35">
+                    <!--the quantity information-->
+                    <div style="width: 50px;" class="mg-r-35">
+                        <input class="inp-k" type="number" value="1">
+                    </div>
+                    <div>$3,000.00</div>
+                </div>
+                <div class="cart-close flex-c">
+                    <img src="img/close-grey.png" alt="img">
+                </div>
+            </div>
+            <!--the button for continue shopping-->
+            <a href="shop.html">
+	            <div class="btn-h contin"> 
+	               	<span> Continue Shopping </span>
+	            </div>
+        	</a>
+            <!--the place for adding a note or promo code-->
+            <div class="flex f-aic pd-h-35">
+                <div class="flex-c mg-r-20">
+                    <img src="img/cart-tag.png" alt="img">
+                </div>
+                <div class="f-o-28-18">Enter a promo code</div>
+            </div>
+            <div class="flex f-aic pd-h-35">
+                <div class="flex-c mg-r-20">
+                    <img src="img/cart-note.png" alt="img">
+                </div>
+                <div class="f-o-28-18">Add a note</div>
+            </div>
+        </div>
+        <!--the ordering summary-->
+        <div class="f-auto">
+            <div class="f-o-40-b pd-bt-35 btm-line desktop">Order Summary</div>
+            <div class="f-b-28-18 pd-h-35 flex f-equal">
+                Subtotal: 
+            </div>
+            <div class="f-b-28-18 pd-bt-35" >    
+                $8,799.00
+            </div>
+            <div class="f-b-28-18 pd-bt-35" style="text-decoration: underline">
+                Estimate Shipping: 
+            </div>    
+            <div class="f-b-28-18 pd-bt-35 btm-line" >
+                FREE
+            </div>
+
+            <div class="f-b-28-18 pd-h-35 flex f-equal">
+                Total:
+            </div>
+            <div class="f-b-28-18 pd-bt-35">
+                $8,799.00
+            </div>
+            <div>
+                <a href="checkout.html">
+                    <div class="btn-h">
+                        <img src="img/lock.png" alt="img" class="mg-r-20">
+                        <span>  Checkout </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+<!--the footer of the page (every page is same)-->
+    <footer class="flex-c-cd m-b-g f-stretch">
+        <!--the text of the footer-->
+        <div class="foot-menu flex f-equal f-auto">
+            <div class="foot-box">
+                <div>TWANG</div>
+                <div><a href="home.html">HOME</a></div>
+                <div><a href="shop.html">SHOP</a></div>
+                <div><a href="story.html">OUR STORY</a></div>
+                <div><a href="#">MEMBERS</a></div>
+                <div><a href="contact.html">CONTACT</a></div>
+            </div>
+            <div class="foot-box">
+                <div>EXPERIENCE</div>
+                <div>FAQ</div>
+                <div>Shipping & Return</div>
+                <div>Store Podivcy</div>
+                <div>Payment Methods</div>
+            </div>
+            <div class="foot-box">
+                <div>FOLLOW US</div>
+                <div>Facebook</div>
+                <div>Twitter</div>
+                <div>Instagram</div>
+                <div>Pinterest</div>
+            </div>
+            <!--the subscribe section-->
+            <div class="foot-box">
+                <div>JOIN OUR NEWSLETTER</div>
+                <!--use <input type="text"> to read the text and use "placeholder=" to hold the hint-->
+                <div><input class="inp-h" type="text" placeholder="Enter your email here*"/></div>
+                <div class="btn-f">Subscribe Now</div>
+            </div>
+        </div>
+        <!--my copyrights declaration-->
+        <div class="foot-copy m-b-o">
+            <div class="copy-s">&copy; 2021 by CHEN JIANG Proudly created</div>
+        </div>
+    </footer>
+</body>
+
+</html>
+

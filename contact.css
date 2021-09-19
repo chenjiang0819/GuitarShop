@@ -1,0 +1,96 @@
+/*margin of the all containt */
+.ct-main {
+    margin: 150px 0;
+}
+/*the colour of contact information*/
+.ct-detail {
+    color: #EB9F2C;
+}
+/*the margin of the title image of contact information*/
+.ct-d-img{
+    margin-right: 57px;
+}
+/*the details of the contact information*/
+.ct-detail > div {
+    font-size: 16px;
+    margin-bottom: 20px;
+    
+}
+
+/* the size of the title of the contact information*/
+.ct-detail > div:first-child {
+    font-size: 36px;
+}
+/*the properties of contact form*/
+.ct-d-form{
+    margin: 0 300px;
+}
+
+.ct-d-form .inp-b{
+    margin: 20px 0;
+}
+
+.ct-d-in-line{
+    display: flex;
+}
+
+.inp-divider{
+    width: 200px;
+}
+/*size of the submit button*/
+.sub-btn .btn-f{
+    width: 200px;
+}
+
+/* we do not display the title image of mobile version */
+.ct-mobile{
+    display: none;
+}
+/*the settinf of the mobile version*/
+@media screen and (max-width: 640px) {
+    /* we do not display the title image of desktop version */
+    .ct-desktop{
+        display: none;
+    }
+    /*the margin of the title image of contact information for mobile*/
+    .ct-mobile{
+        display: flex;
+    }
+    /*margin of the all containt for mobile*/
+    .ct-main{
+        margin-top: 34px;
+    }
+    /*properties of contact information for mobile*/
+    .ct-head{
+        flex-direction: column;
+    }
+    .ct-head .ct-mobile img{
+        max-width: 100%;
+    }
+
+    .ct-head .ct-d-img{
+        margin: 0 0 40px 0;
+    }
+
+    .ct-detail > div {
+        font-size: 16px;
+        text-align: center;
+    }
+    /* the size of the title of the contact information for mobile*/
+    .ct-detail > div:first-child {
+        font-size: 28px;
+    }
+    /*the properties of contact form for mobile*/
+    .ct-d-form{
+        margin: 60px;
+    }
+
+    .ct-d-in-line{
+        display: flex;
+        flex-direction: column;
+    }
+    /*since one column we do not need divider*/
+    .inp-divider{
+        display: none;
+    }
+}

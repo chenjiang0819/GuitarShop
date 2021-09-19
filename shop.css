@@ -1,0 +1,134 @@
+/* we have padding at this page*/
+main {
+    padding: 109px 63px;
+}
+
+/* set size of the filter*/
+.sp-filter {
+    width: 300px;
+    padding: 0 34px;
+}
+/* set padding of the text and tilte for filter*/
+.pd-h-40-20 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/* make the titles of filter bold*/
+.sp-cates > div:first-child,
+.sp-color > div:first-child,
+.sp-material > div:first-child,
+.sp-prices > div:first-child {
+    font-weight: bold;
+}
+/* setting the price selection filter */
+.p-ball-box {
+    position: relative;
+    border-bottom: 1px solid white;
+}
+
+.p-ball {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    bottom: -15px;
+}
+/* setting the colour selection filter */
+.sp-color-box > div {
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    height: 30px;
+    width: 30px;
+    margin: 0 15px 39px 0;
+}
+
+/*the setting for sorting*/
+.sp-d-select {
+    width: 200px;
+}
+
+/*the setting for products list*/
+.shop-list {
+    justify-content: space-between;
+    margin-top: 85px;
+}
+/* the setting for the keywords in searching page*/
+.search-keywords{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* the setting of the mobile version*/
+@media screen and (max-width: 640px) {
+    main {
+        padding: 50px 50px;
+    }
+
+    .pd-h-40-20 {
+        padding: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* the setting for filter*/
+    /* we do not display filter unless the user click the button*/
+    .sp-filter {
+        display: none;
+    }
+
+    .sp-filter.show {
+        display: flex;
+        position: absolute;
+        z-index: 10000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .filter-close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    .p-ball-box {
+        border-bottom: 1px solid black;
+    }
+
+    .p-ball {
+        background: black;
+
+    }
+
+    /* setting of the filter button*/    
+    .btn-filter {
+        display: flex;
+        background: black;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 47px;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .sp-btns div{
+        width: 136px;
+    }
+
+    .sp-btns .btn-h{
+        height: 47px;
+        font-size: 18px;
+        color: black;
+        border-color: black;
+    }
+
+    .sp-btns .btn-h:hover {
+        background: white;
+    }
+}
+
+/***************************************/
+

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Search</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @import url("layout.css");
+        @import url("shop.css");
+    </style>
+        <!--import the common javascript-->
+    <script type="application/javascript" src="java.js">
+    </script>
+</head>
+<body class="pr"> 
+</head>
+    <header class="flex-c f-stretch">
+        <!--import the logo picture-->
+        <div class="header-logo f-auto flex-c">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <!--Nav things-->
+        <nav id="floatNav">
+            <!--the close X for mobile-->
+            <div>
+                <div class="nav-x flex-c" onclick="switchNav()">
+                    <img src="img/x.png" alt="x">
+                </div>
+            </div>
+            <!--the texts of Nav menu and its url-->
+            <div class="header-menu flex-c">
+                <div class="flex-c"><a href="home.html">HOME</a></div>
+                <div class="flex-c active-page"><a href="shop.html">SHOP</a></div>
+                <div class="flex-c"><a href="story.html">OUR STORY</a></div>
+                <div class="flex-c"><a href="#">MEMBERS</a></div> <!--no connection,but we still keep this option-->
+                <div class="flex-c"><a href="contact.html">CONTACT</a></div>
+            </div>
+            <!--import the login picture-->
+            <div class="login box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/login.png" alt="login">
+                </div>
+                <a href="#">Log in</a> <!--no connection,but we still keep this option-->
+            </div>
+        </nav>
+        <!--for cart on the every page-->
+        <div class="cart flex f-stretch m-b-o">
+            <!--import the cart picture-->
+            <div class="box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/cart.png" alt="cart">
+                </div>
+                <a class="m-f-g" href="cart.html">View Cart</a>
+            </div>
+            <!--import the hamburger Nav picture for mobile-->
+            <div class="nav-trigger">
+                <div class="box-img flex-c" onclick="switchNav()">
+                    <img src="img/trigger.png" alt="trigger">
+                </div>
+            </div>
+        </div>
+    </header>
+<!--set the big title where is on the top left-->
+<div class="x-wall">
+    <div class="x-wall-title">
+        <div class="title-box">
+            <div>SHOP</div>
+    </div>
+<!--the title image-->    
+</div>
+    <div class="x-wall-img"><img src="img/wall-shop.png" alt="img"></div>
+</div>
+<!--set the filter for both mobile and laptop-->
+<main class="flex">
+    <div id="filter" class="sp-filter mg-r-68-0 m-b-g-w flex-tl-cd f-none f-stretch">
+        <!--set the close button for mobile-->
+        <div class="mobile filter-close" onclick="switchClass('filter', 'show')">
+            <img src="img/close-grey.png" alt="img">
+        </div>
+        <!--set the title for filters by class-->
+        <div class="f-w-b-55-40 btm-line pd-h-40-20">Filter by</div>
+        <!--set the options for filters by class-->
+        <div class="sp-cates f-g-b-28-18 btm-line pd-h-40-20">
+            <div><input type="checkbox"/>All</div>
+            <div><input type="checkbox"/>Acoustic Guitars</div>
+            <div><input type="checkbox"/>Basses</div>
+            <div><input type="checkbox"/>Electric Guitars</div>
+            <div><input type="checkbox"/>Electric Steel Guitars</div>
+            <div><input type="checkbox"/>Epiphone, Gretsch</div>
+            <div><input type="checkbox"/>Fender Custom</div>
+            <div><input type="checkbox"/>Fender Electric Guitar</div>
+            <div><input type="checkbox"/>Fender Vintage Electric</div>
+            <div><input type="checkbox"/>Gibson & Gretsch Guitars</div>
+            <div><input type="checkbox"/>Gibson Custom Guitars</div>
+            <div><input type="checkbox"/>Gibson Vintage Electric</div>
+        </div>
+        <!--set the title and options for filters by price-->
+        <div class="sp-prices f-g-b-28-18 btm-line pd-h-40-20">
+            <div>Price</div>
+            <br/>
+            <div class="p-ball-box flex f-equal">
+                <div class="p-ball"></div>
+                <div class="p-ball"></div>
+            </div>
+            <br/>
+            <div class="flex f-equal">
+                <div>$50</div>
+                <div>$999999</div>
+            </div>
+        </div>
+        <!--set the title and options for filters by color-->
+        <div class="sp-color f-g-b-28-18 btm-line pd-h-40-20">
+            <div>Color</div>
+            <br/>
+            <div class="sp-color-box flex f-wrap">
+                <div style="background-color: #E1C2A3"></div>
+                <div style="background-color: #68788F"></div>
+                <div style="background-color: #E30B00"></div>
+                <div style="background-color: #68632E"></div>
+                <div style="background-color: #7C7C7C"></div>
+                <div style="background-color: #2A2B1A"></div>
+                <div style="background-color: #FFFFFF"></div>
+                <div style="background-color: #B38F51"></div>
+                <div style="background-color: #F1C678"></div>
+                <div style="background-color: #CE8349"></div>
+                <div style="background-color: #5E564B"></div>
+                <div style="background-color: #6B6B0C"></div>
+            </div>
+        </div>
+        <!--set the title and options for filters by material-->
+        <div class="sp-material f-g-b-28-18 btm-line pd-h-40-20">
+            <div>Material</div>
+            <br/>
+            <div class="flex">
+                <div class="flex-c"><input type="checkbox"/></div>
+                Metal
+            </div>
+            <div class="flex">
+                <div class="flex-c"><input type="checkbox"/></div>
+                Wooden
+            </div>
+            <div class="flex">
+                <div class="flex-c"><input type="checkbox"/></div>
+                Plastic
+            </div>
+        </div>
+        <!--set clear filter for desktop-->
+        <div class="sp-material f-g-b-28-18 pd-h-40-20 desktop">
+            <div><a href="shop.html">Clear filters X</a></div>
+        </div>
+        <!--set clear filter for mobile-->
+        <div class="sp-btns .f-g-28-18 pd-h-40-20 mobile flex f-equal">
+            <div class="btn-h">Clear filers</div>
+            <div class="btn-filter"><a href="shop.html">APPLY</a></div>
+        </div>
+    </div>
+    
+     <!--use select to set the sorting for mobile and desktop-->
+    <div class="sp-main f-auto">
+        <!--set the key words for searching -->
+        <div class="f-o-40-b-28 search-keywords">Search result for " Steel Guitar Cheap"</div>
+        <div class="xfl-cd">
+            <div class="mobile flex mg-bt-35">
+                <div class="btn-filter f-auto mg-r-20" onclick="switchClass('filter', 'show')">Filter</div>
+                    <select class="f-auto m-b-g f-g-28-18">
+                        <option value="1">Sort By</option>
+                        <option value="2">Newest</option>
+                        <option value="3">Price (low to high)</option>
+                        <option value="4">Price (high to low)</option>
+                        <option value="5">Name (A-Z)</option>
+                        <option value="6">Name (Z-A)</option>
+                    </select>
+            </div>
+            <!--set the searching box and its button -->
+            <div class="sp-search mg-r-20-0 flex f-auto">
+                <input type="text" class="f-auto">
+                <div class="flex">
+                    <a href="search.html" class="flex"><img src="img/btn-search.png" alt="se"></a>
+                </div>
+            </div>
+            <div class="desktop sp-sort flex">
+                <div class="sp-d-select flex-c f-stretch f-auto">
+                    <select class="f-auto m-b-g f-g-28-18">
+                        <option value="1">Sort By</option>
+                        <option value="2">Newest</option>
+                        <option value="3">Price (low to high)</option>
+                        <option value="4">Price (high to low)</option>
+                        <option value="5">Name (A-Z)</option>
+                        <option value="6">Name (Z-A)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- dislpay the products list-->
+        <div class="car-box shop-list">
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-1-1.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car new mg-r-20-0">
+                <div class="car-img"><img src="img/s-1-2.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-1-3.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-1-4.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car new mg-r-20-0">
+                <div class="car-img"><img src="img/s-2-1.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-2-2.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-2-3.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-2-4.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-3-1.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-3-2.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car new mg-r-20-0">
+                <div class="car-img"><img src="img/s-3-3.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-3-4.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-4-1.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-4-2.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-4-3.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-4-4.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-5-1.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car new mg-r-20-0">
+                <div class="car-img"><img src="img/s-5-2.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-5-3.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+            <div class="x-car mg-r-20-0">
+                <div class="car-img"><img src="img/s-5-4.png" alt="img"></div>
+                <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                <div class="price"><a href="product.html">$21,999.00</a></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--the footer of the page (every page is same)-->
+    <footer class="flex-c-cd m-b-g f-stretch">
+        <!--the text of the footer-->
+        <div class="foot-menu flex f-equal f-auto">
+            <div class="foot-box">
+                <div>TWANG</div>
+                <div><a href="home.html">HOME</a></div>
+                <div><a href="shop.html">SHOP</a></div>
+                <div><a href="story.html">OUR STORY</a></div>
+                <div><a href="#">MEMBERS</a></div>
+                <div><a href="contact.html">CONTACT</a></div>
+            </div>
+            <div class="foot-box">
+                <div>EXPERIENCE</div>
+                <div>FAQ</div>
+                <div>Shipping & Return</div>
+                <div>Store Podivcy</div>
+                <div>Payment Methods</div>
+            </div>
+            <div class="foot-box">
+                <div>FOLLOW US</div>
+                <div>Facebook</div>
+                <div>Twitter</div>
+                <div>Instagram</div>
+                <div>Pinterest</div>
+            </div>
+            <!--the subscribe section-->
+            <div class="foot-box">
+                <div>JOIN OUR NEWSLETTER</div>
+                <!--use <input type="text"> to read the text and use "placeholder=" to hold the hint-->
+                <div><input class="inp-h" type="text" placeholder="Enter your email here*"/></div>
+                <div class="btn-f">Subscribe Now</div>
+            </div>
+        </div>
+        <!--my copyrights declaration-->
+        <div class="foot-copy m-b-o">
+            <div class="copy-s">&copy; 2021 by CHEN JIANG Proudly created</div>
+        </div>
+    </footer>
+</body>
+
+</html>

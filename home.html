@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--import css-->
+    <style type="text/css">
+        @import url("layout.css");
+        @import url("home.css");
+    </style>
+    <!--import the common javascript-->
+    <script type="application/javascript" src="java.js">
+    </script>  
+</head>
+
+
+<body>
+    <header class="flex-c f-stretch">
+        <!--import the logo picture-->
+        <div class="header-logo f-auto flex-c">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <!--Nav things-->
+        <nav id="floatNav">
+            <!--the close X for mobile-->
+            <div>
+                <div class="nav-x flex-c" onclick="switchNav()">
+                    <img src="img/x.png" alt="x">
+                </div>
+            </div>
+            <!--the texts of Nav menu and its url-->
+            <div class="header-menu flex-c">
+                <div class="flex-c active-page"><a href="home.html">HOME</a></div>
+                <div class="flex-c"><a href="shop.html">SHOP</a></div>
+                <div class="flex-c"><a href="story.html">OUR STORY</a></div>
+                <div class="flex-c"><a href="#">MEMBERS</a></div> <!--no connection,but we still keep this option-->
+                <div class="flex-c"><a href="contact.html">CONTACT</a></div>
+            </div>
+            <!--import the login picture-->
+            <div class="login box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/login.png" alt="login">
+                </div>
+                <a href="#">Log in</a> <!--no connection,but we still keep this option-->
+            </div>
+        </nav>
+        <!--for cart on the every page-->
+        <div class="cart flex f-stretch m-b-o">
+            <!--import the cart picture-->
+            <div class="box flex-c">
+                <div class="box-img flex-c">
+                    <img src="img/cart.png" alt="cart">
+                </div>
+                <a class="m-f-g" href="cart.html">View Cart</a>
+            </div>
+            <!--import the hamburger Nav picture for mobile-->
+            <div class="nav-trigger">
+                <div class="box-img flex-c" onclick="switchNav()">
+                    <img src="img/trigger.png" alt="trigger">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="home-wall flex-c f-stretch">
+            <!--import the first two pictures-->
+            <img src="img/home-wall-1.png" class="f-auto" alt="home-wall">
+            <img src="img/home-wall-2.png" class="f-auto" alt="home-wall">
+            <!--the text on the first picture for mobile-->
+            <div class="shop-widget m-f-w-28">
+                <div>IT'S TIME</div>
+                <div>PLAY</div>
+                <div>YOUR GUITAR</div>
+                <div class="shop-now m-f-w-18" style="text-decoration: underline" >
+                    <a href="shop.html">
+                        SHOP NOW <!--connect to shop-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--import pictures for quick-access section and connect to the corresponding pages-->
+        <div class="home-menu flex-c f-dist m-b-o">
+            <div class="home-nav-box">
+                <img src="img/home-p1.png" alt="home-p1">
+                <a href="shop.html">
+                    <img src="img/home-arrival.png" alt="home-arrival">
+                </a>
+            </div>
+            <div class="home-nav-box">
+                <img src="img/home-p2.png" alt="home-p2">
+                <a href="shop.html">
+                    <img src="img/home-news.png" alt="home-news">
+                </a>
+            </div>
+            <div class="home-nav-box">
+                <img src="img/home-p3.png" alt="home-p3">
+                <a href="contact.html">
+                    <img src="img/home-join.png" alt="home-join">
+                </a>
+            </div>
+        </div>
+        <!--the text for my story in the middle of the home page-->
+        <div class="center-insert-box m-b-o">
+            <div class="center-insert flex-c">
+                <div class="flex-c f-stretch">
+                    <div class="insert-left flex-c-cd m-f-w f-stretch">
+                        <!--the title my story in the middle of the home page-->
+                        <div class="insert-left-up">
+                            <div>PLAY GUITAR</div>
+                            <div>ANYTIME,</div>
+                        </div>
+                        <!--the text of quick-acess to my story in the middle of the home page-->
+                        <div class="insert-left-down">
+                            <div class="m-f-o">ANYWHERE</div>
+                            <div class="s-text">
+                                <div>Glad you found us! Now in our</div>
+                                <div>twelfth year, we specialise in</div>
+                                <div>Vintage Guitars, Basses, Amps an..</div>
+                            </div>
+                            <!--the bottom below the text in the middle of the home page-->
+                            <div class="more-btn"><a class="btn-h" href="story.html">Read More</a></div>
+                        </div>
+                    </div>
+                    <!--import the picture of quick-acess in the middle of the home page-->
+                    <div class="insert-right flex-c">
+                        <img src="img/home-midd.png" alt="home-midd.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--import pictures for new arrive section and connect to the corresponding pages-->
+        <div class="home-arrivals flex-c-cd f-stretch">
+            <div class="block-title flex-c">NEW ARRIVALS</div>
+            <div class="car-box">
+                <div class="x-car new">
+                    <div class="car-img"><img src="img/home-new-1.png" alt="img"></div>
+                    <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                    <div class="price"><a href="product.html">$21,999.00</a></div>
+                </div>
+                <div class="x-car new">
+                    <div class="car-img"><img src="img/home-new-2.png" alt="img"></div>
+                    <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                    <div class="price"><a href="product.html">$21,999.00</a></div>
+                </div>
+                <div class="x-car new">
+                    <div class="car-img"><img src="img/home-new-3.png" alt="img"></div>
+                    <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                    <div class="price"><a href="product.html">$21,999.00</a></div>
+                </div>
+                <div class="x-car new">
+                    <div class="car-img"><img src="img/home-new-4.png" alt="img"></div>
+                    <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                    <div class="price"><a href="product.html">$21,999.00</a></div>
+                </div>
+                <div class="x-car new">
+                    <div class="car-img"><img src="img/home-new-5.png" alt="img"></div>
+                    <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                    <div class="price"><a href="product.html">$21,999.00</a></div>
+                </div>
+                <div class="x-car new">
+                    <div class="car-img"><img src="img/home-new-6.png" alt="img"></div>
+                    <div class="title"><a href="product.html">2012 Martin "Stephen Stills" 0-45</a></div>
+                    <div class="price"><a href="product.html">$21,999.00</a></div>
+                </div>
+            </div>
+             <!--the bottom below the New arrive-->
+            <div class="flex-c arrival-show-all">
+                <div>
+                    <a class="btn-f" href="shop.html">Shop All</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!--the footer of the page (every page is same)-->
+    <footer class="flex-c-cd m-b-g f-stretch">
+        <!--the text of the footer-->
+        <div class="foot-menu flex f-equal f-auto">
+            <div class="foot-box">
+                <div>TWANG</div>
+                <div><a href="home.html">HOME</a></div>
+                <div><a href="shop.html">SHOP</a></div>
+                <div><a href="story.html">OUR STORY</a></div>
+                <div><a href="#">MEMBERS</a></div>
+                <div><a href="contact.html">CONTACT</a></div>
+            </div>
+            <div class="foot-box">
+                <div>EXPERIENCE</div>
+                <div>FAQ</div>
+                <div>Shipping & Return</div>
+                <div>Store Podivcy</div>
+                <div>Payment Methods</div>
+            </div>
+            <div class="foot-box">
+                <div>FOLLOW US</div>
+                <div>Facebook</div>
+                <div>Twitter</div>
+                <div>Instagram</div>
+                <div>Pinterest</div>
+            </div>
+            <!--the subscribe section-->
+            <div class="foot-box">
+                <div>JOIN OUR NEWSLETTER</div>
+                <!--use <input type="text"> to read the text and use "placeholder=" to hold the hint-->
+                <div><input class="inp-h" type="text" placeholder="Enter your email here*"/></div>
+                <div class="btn-f">Subscribe Now</div>
+            </div>
+        </div>
+        <!--my copyrights declaration-->
+        <div class="foot-copy m-b-o">
+            <div class="copy-s">&copy; 2021 by CHEN JIANG Proudly created</div>
+        </div>
+    </footer>
+</body>
+
+</html>
