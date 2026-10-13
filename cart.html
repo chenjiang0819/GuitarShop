@@ -24,7 +24,7 @@
         <nav id="floatNav">
             <!--the close X for mobile-->
             <div>
-                <div class="nav-x flex-c" onclick="switchNav()">
+                <div class="nav-x flex-c" onclick="switchNav()" role="button" tabindex="0" aria-controls="floatNav" aria-expanded="false" aria-label="Close navigation">
                     <img src="img/x.png" alt="x">
                 </div>
             </div>
@@ -55,7 +55,7 @@
             </div>
             <!--import the hamburger Nav picture for mobile-->
             <div class="nav-trigger">
-                <div class="box-img flex-c" onclick="switchNav()">
+                <div class="box-img flex-c" onclick="switchNav()" role="button" tabindex="0" aria-controls="floatNav" aria-expanded="false" aria-label="Open navigation">
                     <img src="img/trigger.png" alt="trigger">
                 </div>
             </div>
@@ -91,7 +91,7 @@
                 <div class="flex-c cart-price mg-t-45-35">
                     <!--the quantity information-->
                     <div style="width: 50px;" class="mg-r-35">
-                        <input class="inp-k" type="number" value="1">
+                        <input class="inp-k" type="number" value="1" aria-label="$5,799.00">
                     </div>
                     <div>$5,799.00</div>
                 </div>
@@ -114,7 +114,7 @@
                 <div class="flex-c cart-price mg-t-45-35">
                     <!--the quantity information-->
                     <div style="width: 50px;" class="mg-r-35">
-                        <input class="inp-k" type="number" value="1">
+                        <input class="inp-k" type="number" value="1" aria-label="$3,000.00">
                     </div>
                     <div>$3,000.00</div>
                 </div>
@@ -205,7 +205,7 @@
             <div class="foot-box">
                 <div>JOIN OUR NEWSLETTER</div>
                 <!--use <input type="text"> to read the text and use "placeholder=" to hold the hint-->
-                <div><input class="inp-h" type="text" placeholder="Enter your email here*"/></div>
+                <div><input class="inp-h" type="text" placeholder="Enter your email here*" aria-label="Enter your email here*"/></div>
                 <div class="btn-f">Subscribe Now</div>
             </div>
         </div>

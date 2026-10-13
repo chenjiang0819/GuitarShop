@@ -23,7 +23,7 @@
         <nav id="floatNav">
             <!--the close X for mobile-->
             <div>
-                <div class="nav-x flex-c" onclick="switchNav()">
+                <div class="nav-x flex-c" onclick="switchNav()" role="button" tabindex="0" aria-controls="floatNav" aria-expanded="false" aria-label="Close navigation">
                     <img src="img/x.png" alt="x">
                 </div>
             </div>
@@ -54,7 +54,7 @@
             </div>
             <!--import the hamburger Nav picture for mobile-->
             <div class="nav-trigger">
-                <div class="box-img flex-c" onclick="switchNav()">
+                <div class="box-img flex-c" onclick="switchNav()" role="button" tabindex="0" aria-controls="floatNav" aria-expanded="false" aria-label="Open navigation">
                     <img src="img/trigger.png" alt="trigger">
                 </div>
             </div>
@@ -75,9 +75,9 @@
                 <!--the personal information form-->
                 <div class="f-b-28-18">Email address</div>
                 <br/>
-                <div><input class="ck-input" type="text"></div>
+                <div><input class="ck-input" type="text" aria-label="Form field"></div>
                 <div class="ck-check flex f-b-28-18">
-                    <div class="flex-c"><input type="checkbox"/></div>
+                    <div class="flex-c"><input type="checkbox" aria-label="Subscribe to our newsletter and we&#x27;ll keep you up to date on our products and services."/></div>
                     Subscribe to our newsletter and we'll keep you up to date on our products and services.
                 </div>
             </div>
@@ -85,12 +85,12 @@
                 <div class="mg-r-68-0 f-auto">
                     <div class="f-b-28-18">First name</div>
                     <br/>
-                    <div><input class="ck-input" type="text"></div>
+                    <div><input class="ck-input" type="text" aria-label="First name"></div>
                 </div>
                 <div class="f-auto">
                     <div class="f-b-28-18">Last name</div>
                     <br/>
-                    <div><input class="ck-input" type="text"></div>
+                    <div><input class="ck-input" type="text" aria-label="Last name"></div>
                 </div>
                 <br/>
             </div>
@@ -98,13 +98,13 @@
             <div class="mg-h-25-12">
                 <div class="f-b-28-18">Company name</div>
                 <br/>
-                <div><input class="ck-input" type="text"></div>
+                <div><input class="ck-input" type="text" aria-label="Company name"></div>
             </div>
             <!--the contry selection form-->
             <div class="mg-h-25-12">
                 <div class="f-b-28-18">Country</div>
                 <br/>
-                <select class="ck-select f-auto m-b-g f-g-28-18">
+                <select class="ck-select f-auto m-b-g f-g-28-18" aria-label="Country Australia American Britain">
                     <option value="1">Australia</option>
                     <option value="2">American</option>
                     <option value="3">Britain</option>
@@ -114,25 +114,25 @@
             <div class="mg-h-25-12">
                 <div class="f-b-28-18">Address</div>
                 <br/>
-                <div><input class="ck-input" type="text"></div>
+                <div><input class="ck-input" type="text" aria-label="Form field"></div>
                 <br/>
-                <div><input class="ck-input" type="text"></div>
+                <div><input class="ck-input" type="text" aria-label="Form field"></div>
             </div>
             <div class="xfl-cd f-equal mg-h-25-12">
                 <div class="mg-r-68-0 f-auto">
                     <div class="f-b-28-18">Postcode</div>
                     <br/>
-                    <div><input class="ck-input" type="text"></div>
+                    <div><input class="ck-input" type="text" aria-label="Postcode"></div>
                 </div>
                 <div class="mg-r-68-0 f-auto">
                     <div class="f-b-28-18">Suburb/City</div>
                     <br/>
-                    <div><input class="ck-input" type="text"></div>
+                    <div><input class="ck-input" type="text" aria-label="Suburb/City"></div>
                 </div>
                 <div class="f-auto">
                     <div class="f-b-28-18">State/Territoy</div>
                     <br/>
-                    <div><input class="ck-input" type="text"></div>
+                    <div><input class="ck-input" type="text" aria-label="State/Territoy"></div>
                 </div>
                 <br/>
             </div>
@@ -140,7 +140,7 @@
             <div class="mg-h-25-12">
                 <div class="f-b-28-18">Phone number</div>
                 <br/>
-                <div><input class="ck-input" type="text"></div>
+                <div><input class="ck-input" type="text" aria-label="Phone number"></div>
             </div>
             <br/>
             <br/>
@@ -148,27 +148,27 @@
             <div class="f-b-40-28 mg-h-25-12">2. Shipping information</div>
             <!--the select billing address for shipping information form-->
             <div class="flex f-b-28-18 ck-ckbox">
-                <div class="flex-c"><input type="radio" name="shipping"></div>
+                <div class="flex-c"><input type="radio" name="shipping" aria-label="Billing address"></div>
                 Billing address
             </div>
             <div class="flex f-b-28-18 ck-ckbox">
-                <div class="flex-c"><input type="radio" name="shipping"></div>
+                <div class="flex-c"><input type="radio" name="shipping" aria-label="Different address"></div>
                 Different address
             </div>
             <!--the delivery instructions (150px height)-->
             <div class="f-b-28-18 mg-h-25-12">Delivery instructions <span class="f-g-28-18">optional</span></div>
             <div class="flex mg-h-25-12">
-                <textarea class="ck-textarea f-auto" style="height: 150px"></textarea>
+                <textarea class="ck-textarea f-auto" style="height: 150px" aria-label="Form field"></textarea>
             </div>
             <!--Char calculator for textarea(dummy)-->
             <div class="f-g-28-18 mg-h-25-12">300 Characters Left</div>
             <!--check box for Signature requirement and leaving parcel-->
             <div class="ck-check flex f-b-28-18">
-                <div class="flex-c"><input type="checkbox"/></div>
+                <div class="flex-c"><input type="checkbox" aria-label="Signature not required on delivery"/></div>
                 Signature not required on delivery
             </div>
             <div class="ck-check flex f-g-28-18">
-                <div class="flex-c"><input style="visibility: hidden" type="checkbox"/></div>
+                <div class="flex-c"><input style="visibility: hidden" type="checkbox" aria-label="Authority to leave parcel if receiver not avalilable"/></div>
                 Authority to leave parcel if receiver not avalilable
             </div>
             <br/>
@@ -179,34 +179,34 @@
             <div class="mg-h-25-12">
                 <div class="f-b-28-18">Card number</div>
                 <br/>
-                <div><input class="ck-input" type="text"></div>
+                <div><input class="ck-input" type="text" aria-label="Card number"></div>
             </div>
             <div class="mg-h-25-12">
                 <div class="f-b-28-18">Name on Card</div>
                 <br/>
-                <div><input class="ck-input" type="text"></div>
+                <div><input class="ck-input" type="text" aria-label="Name on Card"></div>
             </div>
             <div class="xfl-cd f-equal mg-h-25-12">
                 <div class="mg-r-68-0 f-auto">
                     <div class="f-b-28-18">Expiry Date</div>
                     <br/>
-                    <div><input class="ck-input" type="text" placeholder="MM/YY"></div>
+                    <div><input class="ck-input" type="text" placeholder="MM/YY" aria-label="MM/YY"></div>
                 </div>
                 <div class="f-auto">
                     <div class="f-b-28-18">Security Code</div>
                     <br/>
-                    <div><input class="ck-input" type="text" placeholder="CVN"></div>
+                    <div><input class="ck-input" type="text" placeholder="CVN" aria-label="CVN"></div>
                 </div>
                 <br/>
             </div>
             <!-- selection for saving payment details -->
             <div class="f-b-28-18 mg-h-25-12">Would you like us to securely save your payment details for next visit?</div>
             <div class="flex f-b-28-18 ck-ckbox">
-                <div class="flex-c"><input type="radio" name="bankdetails"></div>
+                <div class="flex-c"><input type="radio" name="bankdetails" aria-label="Yes"></div>
                 Yes
             </div>
             <div class="flex f-b-28-18 ck-ckbox">
-                <div class="flex-c"><input type="radio" name="bankdetails"></div>
+                <div class="flex-c"><input type="radio" name="bankdetails" aria-label="No"></div>
                 No
             </div>
             <!-- logo of the financial facilities -->
@@ -288,7 +288,7 @@
     </div>
     <!--the switch button for the summary-->  
     <div class="cart-basket mobile flex-c">
-        <img src="img/basket.png" onclick="switchClass('basket', 'show')">
+        <img src="img/basket.png" alt="Order summary" role="button" tabindex="0" aria-label="Toggle order summary" onclick="switchClass('basket', 'show')">
     </div>
 
 
@@ -322,7 +322,7 @@
             <div class="foot-box">
                 <div>JOIN OUR NEWSLETTER</div>
                 <!--use <input type="text"> to read the text and use "placeholder=" to hold the hint-->
-                <div><input class="inp-h" type="text" placeholder="Enter your email here*"/></div>
+                <div><input class="inp-h" type="text" placeholder="Enter your email here*" aria-label="Enter your email here*"/></div>
                 <div class="btn-f">Subscribe Now</div>
             </div>
         </div>

@@ -24,7 +24,7 @@
         <nav id="floatNav">
             <!--the close X for mobile-->
             <div>
-                <div class="nav-x flex-c" onclick="switchNav()">
+                <div class="nav-x flex-c" onclick="switchNav()" role="button" tabindex="0" aria-controls="floatNav" aria-expanded="false" aria-label="Close navigation">
                     <img src="img/x.png" alt="x">
                 </div>
             </div>
@@ -55,7 +55,7 @@
             </div>
             <!--import the hamburger Nav picture for mobile-->
             <div class="nav-trigger">
-                <div class="box-img flex-c" onclick="switchNav()">
+                <div class="box-img flex-c" onclick="switchNav()" role="button" tabindex="0" aria-controls="floatNav" aria-expanded="false" aria-label="Open navigation">
                     <img src="img/trigger.png" alt="trigger">
                 </div>
             </div>
@@ -82,18 +82,18 @@
         <div class="f-w-b-55-40 btm-line pd-h-40-20">Filter by</div>
         <!--set the options for filters by class-->
         <div class="sp-cates f-g-b-28-18 btm-line pd-h-40-20">
-            <div><input type="checkbox"/>All</div>
-            <div><input type="checkbox"/>Acoustic Guitars</div>
-            <div><input type="checkbox"/>Basses</div>
-            <div><input type="checkbox"/>Electric Guitars</div>
-            <div><input type="checkbox"/>Electric Steel Guitars</div>
-            <div><input type="checkbox"/>Epiphone, Gretsch</div>
-            <div><input type="checkbox"/>Fender Custom</div>
-            <div><input type="checkbox"/>Fender Electric Guitar</div>
-            <div><input type="checkbox"/>Fender Vintage Electric</div>
-            <div><input type="checkbox"/>Gibson & Gretsch Guitars</div>
-            <div><input type="checkbox"/>Gibson Custom Guitars</div>
-            <div><input type="checkbox"/>Gibson Vintage Electric</div>
+            <div><input type="checkbox" aria-label="All"/>All</div>
+            <div><input type="checkbox" aria-label="Acoustic Guitars"/>Acoustic Guitars</div>
+            <div><input type="checkbox" aria-label="Basses"/>Basses</div>
+            <div><input type="checkbox" aria-label="Electric Guitars"/>Electric Guitars</div>
+            <div><input type="checkbox" aria-label="Electric Steel Guitars"/>Electric Steel Guitars</div>
+            <div><input type="checkbox" aria-label="Epiphone, Gretsch"/>Epiphone, Gretsch</div>
+            <div><input type="checkbox" aria-label="Fender Custom"/>Fender Custom</div>
+            <div><input type="checkbox" aria-label="Fender Electric Guitar"/>Fender Electric Guitar</div>
+            <div><input type="checkbox" aria-label="Fender Vintage Electric"/>Fender Vintage Electric</div>
+            <div><input type="checkbox" aria-label="Gibson &amp; Gretsch Guitars"/>Gibson & Gretsch Guitars</div>
+            <div><input type="checkbox" aria-label="Gibson Custom Guitars"/>Gibson Custom Guitars</div>
+            <div><input type="checkbox" aria-label="Gibson Vintage Electric"/>Gibson Vintage Electric</div>
         </div>
         <!--set the title and options for filters by price-->
         <div class="sp-prices f-g-b-28-18 btm-line pd-h-40-20">
@@ -133,15 +133,15 @@
             <div>Material</div>
             <br/>
             <div class="flex">
-                <div class="flex-c"><input type="checkbox"/></div>
+                <div class="flex-c"><input type="checkbox" aria-label="Metal"/></div>
                 Metal
             </div>
             <div class="flex">
-                <div class="flex-c"><input type="checkbox"/></div>
+                <div class="flex-c"><input type="checkbox" aria-label="Wooden"/></div>
                 Wooden
             </div>
             <div class="flex">
-                <div class="flex-c"><input type="checkbox"/></div>
+                <div class="flex-c"><input type="checkbox" aria-label="Plastic"/></div>
                 Plastic
             </div>
         </div>
@@ -161,7 +161,7 @@
         <div class="xfl-cd">
             <div class="mobile flex mg-bt-35">
                 <div class="btn-filter f-auto mg-r-20" onclick="switchClass('filter', 'show')">Filter</div>
-                    <select class="f-auto m-b-g f-g-28-18">
+                    <select class="f-auto m-b-g f-g-28-18" aria-label="Filter Sort By Newest Price (low to high) Price (high to low) Name (A-Z) Name (Z-A)">
                         <option value="1">Sort By</option>
                         <option value="2">Newest</option>
                         <option value="3">Price (low to high)</option>
@@ -172,14 +172,14 @@
             </div>
             <!--set the searching box and its button -->
             <div class="sp-search mg-r-20-0 flex f-auto">
-                <input type="text" class="f-auto">
+                <input type="text" class="f-auto" aria-label="Form field">
                 <div class="flex">
                     <a href="search.html" class="flex"><img src="img/btn-search.png" alt="se"></a>
                 </div>
             </div>
             <div class="desktop sp-sort flex">
                 <div class="sp-d-select flex-c f-stretch f-auto">
-                    <select class="f-auto m-b-g f-g-28-18">
+                    <select class="f-auto m-b-g f-g-28-18" aria-label="Sort By Newest Price (low to high) Price (high to low) Name (A-Z) Name (Z-A)">
                         <option value="1">Sort By</option>
                         <option value="2">Newest</option>
                         <option value="3">Price (low to high)</option>
@@ -326,7 +326,7 @@
             <div class="foot-box">
                 <div>JOIN OUR NEWSLETTER</div>
                 <!--use <input type="text"> to read the text and use "placeholder=" to hold the hint-->
-                <div><input class="inp-h" type="text" placeholder="Enter your email here*"/></div>
+                <div><input class="inp-h" type="text" placeholder="Enter your email here*" aria-label="Enter your email here*"/></div>
                 <div class="btn-f">Subscribe Now</div>
             </div>
         </div>

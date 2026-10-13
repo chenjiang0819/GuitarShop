@@ -25,7 +25,7 @@
         <nav id="floatNav">
             <!--the close X for mobile-->
             <div>
-                <div class="nav-x flex-c" onclick="switchNav()">
+                <div class="nav-x flex-c" onclick="switchNav()" role="button" tabindex="0" aria-controls="floatNav" aria-expanded="false" aria-label="Close navigation">
                     <img src="img/x.png" alt="x">
                 </div>
             </div>
@@ -56,7 +56,7 @@
             </div>
             <!--import the hamburger Nav picture for mobile-->
             <div class="nav-trigger">
-                <div class="box-img flex-c" onclick="switchNav()">
+                <div class="box-img flex-c" onclick="switchNav()" role="button" tabindex="0" aria-controls="floatNav" aria-expanded="false" aria-label="Open navigation">
                     <img src="img/trigger.png" alt="trigger">
                 </div>
             </div>
@@ -100,12 +100,12 @@
         <div class="ct-form">
             <form action="#" class="ct-d-form">
                 <div class="ct-d-in-line">
-                    <input class="inp-b" type="text" placeholder="Name">
+                    <input class="inp-b" type="text" placeholder="Name" aria-label="Name">
                     <div class="inp-divider"></div>
-                    <input class="inp-b" type="text" placeholder="Email">
+                    <input class="inp-b" type="text" placeholder="Email" aria-label="Email">
                 </div>
-                <input class="inp-b" type="text" placeholder="Subject">
-                <textarea class="inp-b" placeholder="Message"></textarea>
+                <input class="inp-b" type="text" placeholder="Subject" aria-label="Subject">
+                <textarea class="inp-b" placeholder="Message" aria-label="Message"></textarea>
             </form>
             <!--the submit button for the contact information-->
             <div class="flex-c sub-btn">
@@ -145,7 +145,7 @@
             <div class="foot-box">
                 <div>JOIN OUR NEWSLETTER</div>
                 <!--use <input type="text"> to read the text and use "placeholder=" to hold the hint-->
-                <div><input class="inp-h" type="text" placeholder="Enter your email here*"/></div>
+                <div><input class="inp-h" type="text" placeholder="Enter your email here*" aria-label="Enter your email here*"/></div>
                 <div class="btn-f">Subscribe Now</div>
             </div>
         </div>
