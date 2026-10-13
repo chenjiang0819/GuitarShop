@@ -113,7 +113,7 @@ if the screen size is smaller than we design, the quick-access will be wrapped*/
     width: 327px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     /*the positions of the first two pictures and home menu for mobile*/
     .home-wall {
         flex-direction: column;

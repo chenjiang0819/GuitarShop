@@ -25,7 +25,7 @@ footer {
 }
 
 /*the settings for mobile version*/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
 /*set the height of the footer for mobile version*/
     footer {
         height: 1800px;
@@ -115,7 +115,7 @@ we set the differnet properties for the flex boxes */
     flex-direction: column;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     .mfl-cd{
         flex-direction: column;
     }
@@ -224,7 +224,7 @@ we set the differnet properties for the flex boxes */
     color: #949494;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     /*set the background colours for the differnet parts in the mobile version*/
     .m-b-g-w {
         background: white;
@@ -299,7 +299,7 @@ we set the differnet properties for the flex boxes */
     margin-right: 120px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     /*set the margins for differnet parts in the the mobile version*/
     .mg-bt-75-45{
         margin-top: 45px;
@@ -349,7 +349,7 @@ we set the differnet properties for the flex boxes */
     display: none;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     /*we do not display parts for desktop  in the mobile version*/
     .desktop{
         display: none;
@@ -431,7 +431,7 @@ we set the differnet properties for the flex boxes */
     padding: 5px 0;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     /*set the proterties of the  input text for mobile version*/
     .inp-h {
         text-align: center;
@@ -502,7 +502,7 @@ we set the differnet properties for the flex boxes */
     color: black ;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     /* the display of the porducts and its descriptions in "shop", "search" and "home" for mobile*/
     .x-car {
         font-size: 18px;
@@ -544,7 +544,7 @@ we set the differnet properties for the flex boxes */
     justify-content: center;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     /*set the properties for title of story, shop, contact, and search for mobile version*/
     .x-wall {
         flex-direction: column-reverse;
@@ -613,7 +613,7 @@ header .nav-trigger {
 }
 
 /* set header for mobile */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     /* no gap on the top */    
     header {
         top: 0;
@@ -733,7 +733,7 @@ footer .foot-copy .copy-s {
     font-size: 16px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     /* set properties of the footer for mobile */
     .foot-menu {
         flex-direction: column;

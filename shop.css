@@ -60,7 +60,7 @@ main {
 }
 
 /* the setting of the mobile version*/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
     main {
         padding: 50px 50px;
     }
