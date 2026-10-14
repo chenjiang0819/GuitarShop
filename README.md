@@ -1,5 +1,13 @@
 # Guitar Shop Website
 
+## Academic Context
+
+University: University of Melbourne  
+Course: Coursework; exact course number not independently established  
+Year: Exact original submission year not independently established  
+Project type: individual
+
+
 ## Overview
 
 A handwritten multi-page guitar-store interface prototype built with HTML, CSS and JavaScript.
@@ -46,7 +54,7 @@ See [AI_PROJECT_REVIEW.md](AI_PROJECT_REVIEW.md) for a technical review.
 
 - This is a front-end prototype: search, checkout, payment and account persistence have no backend implementation.
 - External fonts were blocked during local verification and were not tested online.
-- The publishing/history copy in chenjiang0819.github.io is documented separately and has not received these source-level UI changes.
+- The publishing/history copy in [chenjiang0819.github.io](https://github.com/chenjiang0819/chenjiang0819.github.io) is documented separately and has not received these source-level UI changes.
 
 ## Original Assignment Notes
 
